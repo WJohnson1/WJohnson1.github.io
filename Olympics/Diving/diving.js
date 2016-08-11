@@ -9,6 +9,10 @@ var first_score
 var second_score
 var third_score
 var hello
+var diver_image
+function preLoad(){
+	diver_image = loadImage("WJohnson1.github.io/Olympics/Diving/diver.png")
+}
 function setup(){
 	count = 0
 	homescreen = true

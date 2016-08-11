@@ -11,6 +11,7 @@ var d_opponent6
 var homescreen
 var game
 var movement
+
 function setup(){
 	x = 0
 	game = true
