@@ -40,7 +40,7 @@ function setup(){
 	score3.shapeColor = color(255,255,255)
 	pool = createSprite(675,600,1350,10)
 	pool.shapeColor = color(0,0,255)
-	wall = createSprite(1825,300,50,600)
+	wall = createSprite(1825,350,50,700)
 	player = createSprite(25,250,25,25)
 	player.shapeColor = color(255,0,255)
 	player.velocity.y = -1
