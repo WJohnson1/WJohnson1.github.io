@@ -23,7 +23,7 @@ function setup(){
 	this.num = 2
 	limit = 10
 	gravity = .9
-	createCanvas(1750,700)
+	createCanvas(1795,700)
 	background(0,0,255)
 	board = createSprite(50,292,100,10)
 	board.shapeColor = color(255,255,255)
