@@ -36,6 +36,7 @@ function setup(){
 	endofboard.shapeColor = color(255,0,0)
 	target = createSprite(random(200,1200),550,100,10)
 	target.shapeColor = color(255,255,0)
+	target.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/target.png")) 
 	score1 = createSprite(1100,50,70,70)
 	score1.shapeColor = color(255,255,255)
 	score2 = createSprite(1200,50,70,70)
