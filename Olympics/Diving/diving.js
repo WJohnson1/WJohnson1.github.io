@@ -40,7 +40,7 @@ function setup(){
 	score3.shapeColor = color(255,255,255)
 	pool = createSprite(675,600,1350,10)
 	pool.shapeColor = color(0,0,255)
-	wall = createSprite(1375,300,50,600)
+	wall = createSprite(1825,300,50,600)
 	player = createSprite(25,250,25,25)
 	player.shapeColor = color(255,0,255)
 	player.velocity.y = -1
@@ -52,12 +52,12 @@ function draw(){
 		background(0)
 		textSize(50)
 		fill(255,255,255)
-		text("Can You Get A Perfect Score", 375,100)
-		text("Press Enter to Dive",375,250)
+		text("Can You Get A Perfect Score", 900,100)
+		text("Press Enter to Dive",900,250)
 		textSize(25)
-		text("(Aim for the target)",425,275)
+		text("(Aim for the target)",900,275)
 		textSize(50)
-		text("Press Spacebar to Start",425,450)
+		text("Press Spacebar to Start",900,450)
 		if (keyCode === 32){
 			homescreen = false
 			game = true
