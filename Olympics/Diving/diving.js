@@ -217,25 +217,22 @@ function end(){
 		text(avg_score,1285,68)
 	}
 	if(player.collide(wall)){
-		player.velocity.y = 10
 		player.velocity.x = 0
-		if (player.collide(pool)) {
-			game = false
-			player.velocity.y = 0
-			x_score = target.position.x - player.position.x
-			console.log(x_score)
-			y_score = target.position.y - player.position.y
-			console.log(y_score)
-			first_score = 0
-			console.log(first_score)
-			second_score = 0
-			console.log(second_score)
-			avg_score = 0	
-			console.log(avg_score)
-			text(first_score,1080,68)
-			text(second_score,1170,68)
-			text(avg_score,1265,68)
-		}	
+		game = false
+		player.velocity.y = 0
+		x_score = target.position.x - player.position.x
+		console.log(x_score)
+		y_score = target.position.y - player.position.y
+		console.log(y_score)
+		first_score = 0
+		console.log(first_score)
+		second_score = 0
+		console.log(second_score)
+		avg_score = 0	
+		console.log(avg_score)
+		text(first_score,1080,68)
+		text(second_score,1170,68)
+		text(avg_score,1265,68)
 	}
 }
 function restart(){
