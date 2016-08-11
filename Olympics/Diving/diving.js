@@ -25,11 +25,6 @@ function setup(){
 	gravity = .9
 	createCanvas(1350,600)
 	background(0,0,255)
-	player = createSprite(25,250,25,25)
-	player.shapeColor = color(255,0,255)
-	player.velocity.y = -1
-	player.velocity.x = .3
-	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
 	board = createSprite(50,292,100,10)
 	board.shapeColor = color(255,255,255)
 	endofboard = createSprite(105,292,25,10)
@@ -46,6 +41,11 @@ function setup(){
 	pool = createSprite(675,600,1350,10)
 	pool.shapeColor = color(0,0,255)
 	wall = createSprite(1375,300,50,600)
+	player = createSprite(25,250,25,25)
+	player.shapeColor = color(255,0,255)
+	player.velocity.y = -1
+	player.velocity.x = .3
+	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
 }
 function draw(){
 	if (homescreen === true) {
@@ -114,7 +114,7 @@ function end(){
 		console.log(x_score)
 		y_score = target.position.y - player.position.y
 		console.log(y_score)
-		if (y_score === 55){
+		if (y_score === 65){
 			second_score = 10
 			console.log(second_score)
 			text(second_score,1170,68)
