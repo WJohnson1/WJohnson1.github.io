@@ -29,7 +29,7 @@ function setup(){
 	player.shapeColor = color(255,0,255)
 	player.velocity.y = -1
 	player.velocity.x = .3
-	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/Diving.jpg"))
+	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/Diving.png"))
 	board = createSprite(50,292,100,10)
 	board.shapeColor = color(255,255,255)
 	endofboard = createSprite(105,292,25,10)
