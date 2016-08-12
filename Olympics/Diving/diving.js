@@ -105,12 +105,12 @@ function jump(){
 function end(){
 	fill(255,0,0)
 	textSize(100)															
-	if (player.collide(target)) {
+	x_score = target.position.x - player.position.x - 42.5
+	console.log(x_score)
+	y_score = target.position.y - player.position.y
+	if (player.collide(target) && x_score > -55 && x_score < 55) {
 		player.velocity.y = 0
 		game = false
-		x_score = target.position.x - player.position.x - 37.5
-		console.log(x_score)
-		y_score = target.position.y - player.position.y
 		console.log(y_score)
 		if (y_score === 58.5){
 			second_score = 10
@@ -165,37 +165,49 @@ function end(){
 			text(first_score,425,123)
 			text(avg_score,825,123)
 		}
-		if ((x_score < 70 && x_score > 55) | (x_score > -70 && x_score < -55)){
-			first_score = 4
-			console.log(first_score)
-			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
-			text(first_score,425,123)
-			text(avg_score,825,123)					
-		}
-		if ((x_score < 85 && x_score > 70) | (x_score > -85 && x_score < -70)){
-			first_score = 3
-			console.log(first_score)
-			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
-			text(first_score,425,123)
-			text(avg_score,825,123)					
-		}
-		if ((x_score < 100 && x_score > 85) | (x_score > -100 && x_score < -85)){
-			first_score = 2
-			console.log(first_score)
-			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
-			text(first_score,425,123)
-			text(avg_score,825,123)					
-		}
-		if ((x_score < 115 && x_score > 100) | (x_score > -115 && x_score < -100)){
-			first_score = 1
-			console.log(first_score)
-			avg_score = (first_score + second_score)/2
-			console.log(avg_score)					
-		}				
-	}		
+	}	
+	if (player.collide(target) && (x_score < 70 && x_score > 55) | (x_score > -70 && x_score < -55)){
+		first_score = 0
+		console.log(first_score)
+		second_score = 0
+		console.log(second_score)
+		text(second_score,625,123)
+		avg_score = 0
+		console.log(avg_score)
+		text(first_score,425,123)
+		text(avg_score,825,123)					
+	}
+	if (player.collide(target) && (x_score < 85 && x_score > 70) | (x_score > -85 && x_score < -70)){
+		first_score = 0
+		console.log(first_score)
+		second_score = 0
+		console.log(second_score)
+		text(second_score,625,123)
+		avg_score = 0
+		console.log(avg_score)
+		text(first_score,425,123)
+		text(avg_score,825,123)					
+	}
+	if (player.collide(target) && (x_score < 100 && x_score > 85) | (x_score > -100 && x_score < -85)){
+		first_score = 0
+		console.log(first_score)
+		second_score = 0
+		console.log(second_score)
+		text(second_score,625,123)
+		avg_score = 0
+		console.log(avg_score)
+		text(first_score,425,123)
+		text(avg_score,825,123)					
+	}
+	if (player.collide(target) && (x_score < 115 && x_score > 100) | (x_score > -115 && x_score < -100)){
+		first_score = 0
+		console.log(first_score)
+		second_score = 0
+		console.log(second_score)
+		text(second_score,625,123)	
+		avg_score = 0
+		console.log(avg_score)					
+	}						
 	if (player.collide(p)) {
 		game = false
 		player.velocity.y = 0
