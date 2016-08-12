@@ -46,9 +46,8 @@ function setup(){
 	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
 }
 function draw(){
-	restart()
 	if (homescreen === true) {
-		background(128,188,163)
+		background(0)
 		textSize(50)
 		fill(255,255,255)
 		text("Can You Get A Perfect Score", 100,100)
@@ -69,6 +68,7 @@ function draw(){
 		drawSprites()
 		end()
 	}
+	restart()
 }	
 function jump(){
 	if (jumping === false && keyDown(37) && player.position.y >= 275) {
@@ -108,7 +108,7 @@ function end(){
 	if (player.collide(target)) {
 		player.velocity.y = 0
 		game = false
-		x_score = target.position.x - player.position.x
+		x_score = target.position.x - player.position.x - 37.5
 		console.log(x_score)
 		y_score = target.position.y - player.position.y
 		console.log(y_score)
@@ -116,7 +116,6 @@ function end(){
 			second_score = 10
 			console.log(second_score)
 			text(second_score,625,123)
-			restart()
 		}
 		if (x_score < 5 && x_score > -5){
 			first_score = 10
@@ -125,7 +124,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)
-			restart()
 		}
 		if ((x_score < 10 && x_score > 5) | (x_score > -10 && x_score < -5)){
 			first_score = 9
@@ -134,7 +132,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)			
-			restart()
 		}
 		if ((x_score < 20 && x_score > 10) | (x_score > -20 && x_score < -10)){
 			first_score = 8
@@ -143,7 +140,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)
-			restart()
 		}
 		if ((x_score < 30 && x_score > 20) | (x_score > -30 && x_score < -20)){
 			first_score = 7
@@ -152,7 +148,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)
-			restart()
 		}				
 		if ((x_score < 40 && x_score > 30) | (x_score > -40 && x_score < -30)){
 			first_score = 6
@@ -161,7 +156,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)		
-			restart()
 		}
 		if ((x_score < 55 && x_score > 40) | (x_score > -50 && x_score < -40)){
 			first_score = 5
@@ -170,7 +164,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)
-			restart()
 		}
 		if ((x_score < 70 && x_score > 55) | (x_score > -70 && x_score < -55)){
 			first_score = 4
@@ -179,7 +172,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)					
-			restart()
 		}
 		if ((x_score < 85 && x_score > 70) | (x_score > -85 && x_score < -70)){
 			first_score = 3
@@ -188,7 +180,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)					
-			restart()
 		}
 		if ((x_score < 100 && x_score > 85) | (x_score > -100 && x_score < -85)){
 			first_score = 2
@@ -197,14 +188,12 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)					
-			restart()
 		}
 		if ((x_score < 115 && x_score > 100) | (x_score > -115 && x_score < -100)){
 			first_score = 1
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)					
-			restart()
 		}				
 	}		
 	if (player.collide(p)) {
@@ -223,7 +212,6 @@ function end(){
 		text(first_score,425,123)
 		text(second_score,625,123)
 		text(avg_score,825,123)
-		restart()
 	}
 	if(player.collide(wall)){
 		player.velocity.x = 0
@@ -242,12 +230,11 @@ function end(){
 		text(first_score,425,123)
 		text(second_score,625,123)
 		text(avg_score,825,123)
-		restart()
 	}	
 }
 function restart(){
 	if (game===false && homescreen===false) {
-		fill(0.255,0)
+		fill(0)
 		textSize(50)
 		text("Do you want to play again?",400,280)
 		textSize(25)
