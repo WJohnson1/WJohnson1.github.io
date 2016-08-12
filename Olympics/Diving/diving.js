@@ -25,6 +25,8 @@ function setup(){
 	gravity = .9
 	createCanvas(1795,700)
 	background(0,0,255)
+	background = createSprite(900,300, 1800,600)
+	background.shapeColor=color(0,255,0)
 	board = createSprite(50,292,100,10)
 	board.shapeColor = color(255,255,255)
 	endofboard = createSprite(105,292,25,10)
