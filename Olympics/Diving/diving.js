@@ -36,7 +36,7 @@ function setup(){
 	endofboard.shapeColor = color(255,0,0)
 	wall = createSprite(1375,300,50,600)
 	wall.shapeColor = color(255,255,255)
-	target = createSprite(random(200,1200),500,100,35)
+	target = createSprite(random(200,1200),500,70,35)
 	target.shapeColor = color(255,255,0)
 	target.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/target.png")) 
 	player = createSprite(25,250,25,25)
