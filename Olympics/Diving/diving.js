@@ -57,12 +57,12 @@ function draw(){
 		background(0)
 		textSize(50)
 		fill(255,255,255)
-		text("Can You Get A Perfect Score", 700,100)
-		text("Press Enter to Dive",700,250)
+		text("Can You Get A Perfect Score", 600,100)
+		text("Press Enter to Dive",600,250)
 		textSize(25)
-		text("(Aim for the target)",700,275)
+		text("(Aim for the target)",600,275)
 		textSize(50)
-		text("Press Spacebar to Start",900,450)
+		text("Press Spacebar to Start",600,450)
 		if (keyCode === 32){
 			homescreen = false
 			game = true
@@ -115,7 +115,7 @@ function end(){
 	if (player.collide(target)) {
 		player.velocity.y = 0
 		game = false
-		x_score = target.position.x - player.position.x - 42.5
+		x_score = target.position.x - player.position.x - 37.5
 		console.log(x_score)
 		y_score = target.position.y - player.position.y
 		console.log(y_score)
