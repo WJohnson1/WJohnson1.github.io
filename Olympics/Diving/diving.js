@@ -115,79 +115,79 @@ function end(){
 		if (y_score === 58.5){
 			second_score = 10
 			console.log(second_score)
-			text(second_score,625,143)
+			text(second_score,625,123)
 		}
 		if (x_score < 5 && x_score > -5){
 			first_score = 10
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)
+			text(first_score,425,123)
+			text(avg_score,825,123)
 		}
 		if ((x_score < 10 && x_score > 5) | (x_score > -10 && x_score < -5)){
 			first_score = 9
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)			
+			text(first_score,425,123)
+			text(avg_score,825,123)			
 		}
 		if ((x_score < 20 && x_score > 10) | (x_score > -20 && x_score < -10)){
 			first_score = 8
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)
+			text(first_score,425,123)
+			text(avg_score,825,123)
 		}
 		if ((x_score < 30 && x_score > 20) | (x_score > -30 && x_score < -20)){
 			first_score = 7
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)
+			text(first_score,425,123)
+			text(avg_score,825,123)
 		}				
 		if ((x_score < 40 && x_score > 30) | (x_score > -40 && x_score < -30)){
 			first_score = 6
 			console.log(first_score)		
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)		
+			text(first_score,425,123)
+			text(avg_score,825,123)		
 		}
 		if ((x_score < 55 && x_score > 40) | (x_score > -50 && x_score < -40)){
 			first_score = 5
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)
+			text(first_score,425,123)
+			text(avg_score,825,123)
 		}
 		if ((x_score < 70 && x_score > 55) | (x_score > -70 && x_score < -55)){
 			first_score = 4
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)					
+			text(first_score,425,123)
+			text(avg_score,825,123)					
 		}
 		if ((x_score < 85 && x_score > 70) | (x_score > -85 && x_score < -70)){
 			first_score = 3
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)					
+			text(first_score,425,123)
+			text(avg_score,825,123)					
 		}
 		if ((x_score < 100 && x_score > 85) | (x_score > -100 && x_score < -85)){
 			first_score = 2
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,425,143)
-			text(avg_score,825,143)					
+			text(first_score,425,123)
+			text(avg_score,825,123)					
 		}
 		if ((x_score < 115 && x_score > 100) | (x_score > -115 && x_score < -100)){
 			first_score = 1
@@ -209,9 +209,9 @@ function end(){
 		console.log(second_score)
 		avg_score = 0	
 		console.log(avg_score)
-		text(first_score,425,143)
-		text(second_score,625,143)
-		text(avg_score,825,143)
+		text(first_score,425,123)
+		text(second_score,625,123)
+		text(avg_score,825,123)
 	}
 	if(player.collide(wall)){
 		player.velocity.x = 0
@@ -227,18 +227,18 @@ function end(){
 		console.log(second_score)
 		avg_score = 0	
 		console.log(avg_score)
-		text(first_score,425,143)
-		text(second_score,625,143)
-		text(avg_score,825,143)
+		text(first_score,425,123)
+		text(second_score,625,123)
+		text(avg_score,825,123)
 	}	
 }
 function restart(){
 	if (game===false && homescreen===false) {
 		fill(0)
 		textSize(50)
-		text("Do you want to play again?",500,280)
+		text("Do you want to play again?",400,280)
 		textSize(25)
-		text("Press R to Restart",800,550)
+		text("Press R to Restart",600,550)
 		if (keyCode === 82){
 			player.remove()
 			target.remove()
