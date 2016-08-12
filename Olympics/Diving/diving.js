@@ -231,9 +231,9 @@ function end(){
 		console.log(second_score)
 		avg_score = 0	
 		console.log(avg_score)
-		text(first_score,1080,68)
-		text(second_score,1170,68)
-		text(avg_score,1265,68)
+		text(first_score,380,68)
+		text(second_score,680,68)
+		text(avg_score,980,68)
 	}
 }
 function restart(){
