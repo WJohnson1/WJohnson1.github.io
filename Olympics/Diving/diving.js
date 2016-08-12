@@ -234,7 +234,7 @@ function end(){
 		text("0",425,123)
 		text("0",625,123)
 		text("0",825,123)
-		// game = false
+		game = false
 	}	
 }
 function restart(){
