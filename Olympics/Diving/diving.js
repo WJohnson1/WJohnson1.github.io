@@ -235,7 +235,7 @@ function end(){
 		text(second_score,825,183)
 		text(avg_score,1125,181)
 	}
-}
+	
 function restart(){
 	if (game===false && homescreen===false) {
 		fill(0)
