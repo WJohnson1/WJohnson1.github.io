@@ -36,7 +36,7 @@ function setup(){
 	endofboard.shapeColor = color(255,0,0)
 	wall = createSprite(1375,300,50,600)
 	wall.shapeColor = color(255,255,255)
-	target = createSprite(random(200,1200),500,30,35)
+	target = createSprite(random(200,1200),500,100,35)
 	target.shapeColor = color(255,255,0)
 	target.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/target.png")) 
 	player = createSprite(25,250,25,25)
@@ -53,7 +53,7 @@ function draw(){
 		text("Can You Get A Perfect Score", 350,100)
 		text("Press Enter to Dive",450,250)
 		textSize(25)
-		text("(Aim for the target)",550,275)
+		text("(Aim for the target)",450,275)
 		textSize(50)
 		text("Press Spacebar to Start",425,450)
 		if (keyCode === 32){
@@ -107,7 +107,7 @@ function end(){
 	textSize(100)															
 	if (player.collide(target)) {
 		player.velocity.y = 0
-		game = false
+		game = falses
 		x_score = target.position.x - player.position.x - 37.5
 		console.log(x_score)
 		y_score = target.position.y - player.position.y
