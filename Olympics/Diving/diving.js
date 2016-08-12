@@ -106,7 +106,7 @@ function jump(){
 	}
 }
 function end(){
-	fill(255,255,0)
+	fill(255,0,0)
 	textSize(50)
 	if (player.collide(target)) {
 		player.velocity.y = 0
