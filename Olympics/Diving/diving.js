@@ -242,7 +242,7 @@ function restart(){
 		textSize(50)
 		text("Do you want to play again?",600,280)
 		textSize(25)
-		text("Press R to Restart",800,350)
+		text("Press R to Restart",800,650)
 		if (keyCode === 82){
 			player.remove()
 			target.remove()
