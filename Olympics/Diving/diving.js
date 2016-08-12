@@ -106,7 +106,7 @@ function jump(){
 }
 function end(){
 	fill(255,0,0)
-	textSize(50)
+	textSize(100)
 	if (player.collide(target)) {
 		player.velocity.y = 0
 		game = false
@@ -238,11 +238,11 @@ function end(){
 }
 function restart(){
 	if (game===false && homescreen===false) {
-		fill(255)
+		fill(0)
 		textSize(50)
-		text("Do you want to play again?",300,280)
+		text("Do you want to play again?",600,280)
 		textSize(25)
-		text("Press R to Restart",360,350)
+		text("Press R to Restart",750,350)
 		if (keyCode === 82){
 			player.remove()
 			target.remove()
