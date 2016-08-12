@@ -47,13 +47,13 @@ function setup(){
 }
 function draw(){
 	if (homescreen === true) {
-		background(128,188,163)
+		background(0)
 		textSize(50)
 		fill(255,255,255)
-		text("Can You Get A Perfect Score", 350,100)
-		text("Press Enter to Dive",450,250)
+		text("Can You Get A Perfect Score", 100,100)
+		text("Press Enter to Dive",375,250)
 		textSize(25)
-		text("(Aim for the target)",450,275)
+		text("(Aim for the target)",425,275)
 		textSize(50)
 		text("Press Spacebar to Start",425,450)
 		if (keyCode === 32){
@@ -249,12 +249,3 @@ function restart(){
 	}
 }
 
-$('body').toggleClass('loaded');
-$(document).ready(function() {
- 
-    setTimeout(function(){
-        $('body').addClass('loaded');
-        $('h1').css('color','#222222');
-    }, 3000);
- 
-});
