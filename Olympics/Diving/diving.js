@@ -36,7 +36,7 @@ function setup(){
 	endofboard.shapeColor = color(255,0,0)
 	wall = createSprite(1375,300,50,600)
 	wall.shapeColor = color(255,255,255)
-	target = createSprite(random(200,1200),500,70,35)
+	target = createSprite(random(200,1200),500,60,35)
 	target.shapeColor = color(255,255,0)
 	target.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/target.png")) 
 	player = createSprite(25,250,25,25)
@@ -172,28 +172,6 @@ function end(){
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)					
-		}
-		if ((x_score < 85 && x_score > 70) | (x_score > -85 && x_score < -70)){
-			first_score = 3
-			console.log(first_score)
-			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
-			text(first_score,425,123)
-			text(avg_score,825,123)					
-		}
-		if ((x_score < 100 && x_score > 85) | (x_score > -100 && x_score < -85)){
-			first_score = 2
-			console.log(first_score)
-			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
-			text(first_score,425,123)
-			text(avg_score,825,123)					
-		}
-		if ((x_score < 115 && x_score > 100) | (x_score > -115 && x_score < -100)){
-			first_score = 1
-			console.log(first_score)
-			avg_score = (first_score + second_score)/2
-			console.log(avg_score)					
 		}				
 	}		
 	if (player.collide(p)) {
