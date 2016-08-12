@@ -417,3 +417,12 @@ function youWin(){
 	game = false
 	text("You Win", 200,390)
 }
+$('body').toggleClass('loaded');
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        $('h1').css('color','#222222');
+    }, 3000);
+ 
+});
