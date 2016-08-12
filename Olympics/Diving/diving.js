@@ -213,9 +213,9 @@ function end(){
 		console.log(second_score)
 		avg_score = 0	
 		console.log(avg_score)
-		text(first_score,1085,68)
-		text(second_score,1185,68)
-		text(avg_score,1285,68)
+		text(first_score,385,68)
+		text(second_score,685,68)
+		text(avg_score,985,68)
 	}
 	if(player.collide(wall)){
 		player.velocity.x = 0
