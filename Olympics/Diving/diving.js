@@ -157,7 +157,7 @@ function end(){
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
 			text(first_score,525,183)
-			text(avg_score,1125,183)		}
+			text(avg_score,1125,183)		
 		}
 		if ((x_score < 55 && x_score > 40) | (x_score > -50 && x_score < -40)){
 			first_score = 5
@@ -198,8 +198,8 @@ function end(){
 			console.log(avg_score)
 			text(first_score,525,183)
 			text(avg_score,1125,183)					
-		}														
-	}
+		}
+	}															
 	if (player.collide(pool)) {
 		game = false
 		player.velocity.y = 0
