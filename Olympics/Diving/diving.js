@@ -107,7 +107,7 @@ function end(){
 	textSize(100)															
 	if (player.collide(target)) {
 		player.velocity.y = 0
-		game = falses
+		game = false
 		x_score = target.position.x - player.position.x - 37.5
 		console.log(x_score)
 		y_score = target.position.y - player.position.y
