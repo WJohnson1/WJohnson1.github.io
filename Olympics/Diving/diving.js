@@ -27,6 +27,7 @@ function setup(){
 	background(0,0,255)
 	b = createSprite(900,300, 1800,600)
 	b.shapeColor=color(0,255,0)
+	b.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/Crowd.png")) 
 	p = createSprite(900,650,1800,100)
 	p.shapeColor = color(0,0,255)
 	board = createSprite(50,292,100,10)
