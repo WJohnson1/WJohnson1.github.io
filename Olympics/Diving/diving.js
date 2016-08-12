@@ -50,12 +50,12 @@ function draw(){
 		background(0)
 		textSize(50)
 		fill(255,255,255)
-		text("Can You Get A Perfect Score", 500,100)
-		text("Press Enter to Dive",550,250)
+		text("Can You Get A Perfect Score", 100,100)
+		text("Press Enter to Dive",375,250)
 		textSize(25)
-		text("(Aim for the target)",700,275)
+		text("(Aim for the target)",425,275)
 		textSize(50)
-		text("Press Spacebar to Start",500,450)
+		text("Press Spacebar to Start",425,450)
 		if (keyCode === 32){
 			homescreen = false
 			game = true
@@ -115,79 +115,79 @@ function end(){
 		if (y_score === 58.5){
 			second_score = 10
 			console.log(second_score)
-			text(second_score,850,153)
+			text(second_score,850,143)
 		}
 		if (x_score < 5 && x_score > -5){
 			first_score = 10
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)
+			text(first_score,550,143)
+			text(avg_score,1150,143)
 		}
 		if ((x_score < 10 && x_score > 5) | (x_score > -10 && x_score < -5)){
 			first_score = 9
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)			
+			text(first_score,550,143)
+			text(avg_score,1150,143)			
 		}
 		if ((x_score < 20 && x_score > 10) | (x_score > -20 && x_score < -10)){
 			first_score = 8
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)
+			text(first_score,550,143)
+			text(avg_score,1150,143)
 		}
 		if ((x_score < 30 && x_score > 20) | (x_score > -30 && x_score < -20)){
 			first_score = 7
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)
+			text(first_score,550,143)
+			text(avg_score,1150,143)
 		}				
 		if ((x_score < 40 && x_score > 30) | (x_score > -40 && x_score < -30)){
 			first_score = 6
 			console.log(first_score)		
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)		
+			text(first_score,550,143)
+			text(avg_score,1150,143)		
 		}
 		if ((x_score < 55 && x_score > 40) | (x_score > -50 && x_score < -40)){
 			first_score = 5
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)
+			text(first_score,550,143)
+			text(avg_score,1150,143)
 		}
 		if ((x_score < 70 && x_score > 55) | (x_score > -70 && x_score < -55)){
 			first_score = 4
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)					
+			text(first_score,550,143)
+			text(avg_score,1150,143)					
 		}
 		if ((x_score < 85 && x_score > 70) | (x_score > -85 && x_score < -70)){
 			first_score = 3
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)					
+			text(first_score,550,143)
+			text(avg_score,1150,143)					
 		}
 		if ((x_score < 100 && x_score > 85) | (x_score > -100 && x_score < -85)){
 			first_score = 2
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,550,153)
-			text(avg_score,1150,153)					
+			text(first_score,550,143)
+			text(avg_score,1150,143)					
 		}
 		if ((x_score < 115 && x_score > 100) | (x_score > -115 && x_score < -100)){
 			first_score = 1
@@ -209,9 +209,9 @@ function end(){
 		console.log(second_score)
 		avg_score = 0	
 		console.log(avg_score)
-		text(first_score,550,153)
-		text(second_score,850,153)
-		text(avg_score,1150,153)
+		text(first_score,550,143)
+		text(second_score,850,143)
+		text(avg_score,1150,143)
 	}
 	if(player.collide(wall)){
 		player.velocity.x = 0
@@ -227,18 +227,18 @@ function end(){
 		console.log(second_score)
 		avg_score = 0	
 		console.log(avg_score)
-		text(first_score,525,163)
-		text(second_score,825,163)
-		text(avg_score,1125,163)
+		text(first_score,625,143)
+		text(second_score,825,143)
+		text(avg_score,1025,143)
 	}	
 }
 function restart(){
 	if (game===false && homescreen===false) {
 		fill(0)
 		textSize(50)
-		text("Do you want to play again?",600,280)
+		text("Do you want to play again?",500,280)
 		textSize(25)
-		text("Press R to Restart",800,650)
+		text("Press R to Restart",800,550)
 		if (keyCode === 82){
 			player.remove()
 			target.remove()
