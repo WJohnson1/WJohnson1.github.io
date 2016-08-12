@@ -47,7 +47,7 @@ function setup(){
 }
 function draw(){
 	if (homescreen === true) {
-		background(0)
+		background(128,188,163)
 		textSize(50)
 		fill(255,255,255)
 		text("Can You Get A Perfect Score", 100,100)
@@ -234,7 +234,7 @@ function end(){
 }
 function restart(){
 	if (game===false && homescreen===false) {
-		fill(0)
+		fill(0.255,0)
 		textSize(50)
 		text("Do you want to play again?",400,280)
 		textSize(25)
