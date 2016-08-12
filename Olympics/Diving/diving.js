@@ -114,7 +114,7 @@ function end(){
 		console.log(x_score)
 		y_score = target.position.y - player.position.y
 		console.log(y_score)
-		if (y_score === 65.5){
+		if (y_score === 58.5){
 			second_score = 10
 			console.log(second_score)
 			text(second_score,1170,68)
