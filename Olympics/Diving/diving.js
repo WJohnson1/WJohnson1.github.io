@@ -117,87 +117,87 @@ function end(){
 		if (y_score === 58.5){
 			second_score = 10
 			console.log(second_score)
-			text(second_score,900,68)
+			text(second_score,900,88)
 		}
 		if (x_score < 5 && x_score > -5){
 			first_score = 10
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)
+			text(first_score,600,88)
+			text(avg_score,1200,88)
 		}
 		if ((x_score < 10 && x_score > 5) | (x_score > -10 && x_score < -5)){
 			first_score = 9
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)			
+			text(first_score,600,88)
+			text(avg_score,1200,88)			
 		}
 		if ((x_score < 20 && x_score > 10) | (x_score > -20 && x_score < -10)){
 			first_score = 8
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)					
+			text(first_score,600,88)
+			text(avg_score,1200,88)					
 		}
 		if ((x_score < 30 && x_score > 20) | (x_score > -30 && x_score < -20)){
 			first_score = 7
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)					
+			text(first_score,600,88)
+			text(avg_score,1200,88)					
 		}	
 		if ((x_score < 40 && x_score > 30) | (x_score > -40 && x_score < -30)){
 			first_score = 6
 			console.log(first_score)		
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)					
+			text(first_score,600,88)
+			text(avg_score,1200,88)					
 		}
 		if ((x_score < 55 && x_score > 40) | (x_score > -50 && x_score < -40)){
 			first_score = 5
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)					
+			text(first_score,600,88)
+			text(avg_score,1200,88)					
 		}
 		if ((x_score < 70 && x_score > 55) | (x_score > -70 && x_score < -55)){
 			first_score = 4
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)					
+			text(first_score,600,88)
+			text(avg_score,1200,88)					
 		}
 		if ((x_score < 85 && x_score > 70) | (x_score > -85 && x_score < -70)){
 			first_score = 3
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)					
+			text(first_score,600,88)
+			text(avg_score,1200,88)					
 		}
 		if ((x_score < 100 && x_score > 85) | (x_score > -100 && x_score < -85)){
 			first_score = 2
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)					
+			text(first_score,600,88)
+			text(avg_score,1200,88)					
 		}
 		if ((x_score < 50 && x_score > 45) | (x_score > -50 && x_score < -45)){
 			first_score = 1
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
-			text(first_score,600,68)
-			text(avg_score,1200,68)					
+			text(first_score,600,88)
+			text(avg_score,1200,88)					
 		}														
 	}
 	if (player.collide(pool)) {
@@ -213,9 +213,9 @@ function end(){
 		console.log(second_score)
 		avg_score = 0	
 		console.log(avg_score)
-		text(first_score,600,68)
-		text(second_score,900,68)
-		text(avg_score,1200,68)
+		text(first_score,600,88)
+		text(second_score,900,88)
+		text(avg_score,1200,88)
 	}
 	if(player.collide(wall)){
 		player.velocity.x = 0
@@ -231,9 +231,9 @@ function end(){
 		console.log(second_score)
 		avg_score = 0	
 		console.log(avg_score)
-		text(first_score,600,68)
-		text(second_score,900,68)
-		text(avg_score,1200,68)
+		text(first_score,600,88)
+		text(second_score,900,88)
+		text(avg_score,1200,88)
 	}
 }
 function restart(){
