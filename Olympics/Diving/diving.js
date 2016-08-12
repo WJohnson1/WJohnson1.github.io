@@ -46,6 +46,7 @@ function setup(){
 	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
 }
 function draw(){
+	restart()
 	if (homescreen === true) {
 		background(128,188,163)
 		textSize(50)
@@ -68,7 +69,6 @@ function draw(){
 		drawSprites()
 		end()
 	}
-	restart()
 }	
 function jump(){
 	if (jumping === false && keyDown(37) && player.position.y >= 275) {
