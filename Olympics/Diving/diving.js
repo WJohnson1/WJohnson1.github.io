@@ -23,22 +23,20 @@ function setup(){
 	this.num = 2
 	limit = 10
 	gravity = .9
-	createCanvas(1795,700)
+	createCanvas(1350,600)
 	background(0,0,255)
-	b = createSprite(900,300, 1800,600)
+	b = createSprite(675,250, 1350,500)
 	b.shapeColor=color(0,255,0)
 	b.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/Crowd.png")) 
-	p = createSprite(900,650,1800,100)
+	p = createSprite(675,550,1350,100)
 	p.shapeColor = color(0,0,255)
 	board = createSprite(50,292,100,10)
 	board.shapeColor = color(0,0,0)
 	endofboard = createSprite(105,292,25,10)
 	endofboard.shapeColor = color(255,0,0)
-	pool = createSprite(675,600,1800,10)
-	pool.shapeColor = color(0,0,255)
-	wall = createSprite(1825,350,50,700)
+	wall = createSprite(1375,300,50,600)
 	wall.shapeColor = color(255,255,255)
-	target = createSprite(random(200,1200),600,100,35)
+	target = createSprite(random(200,1200),500,100,35)
 	target.shapeColor = color(255,255,0)
 	target.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/target.png")) 
 	player = createSprite(25,250,25,25)
@@ -198,7 +196,7 @@ function end(){
 			console.log(avg_score)					
 		}				
 	}		
-	if (player.collide(pool)) {
+	if (player.collide(p)) {
 		game = false
 		player.velocity.y = 0
 		x_score = target.position.x - player.position.x
