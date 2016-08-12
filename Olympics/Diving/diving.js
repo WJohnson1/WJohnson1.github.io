@@ -106,7 +106,7 @@ function jump(){
 }
 function end(){
 	fill(255,0,0)
-	textSize(100)
+	textSize(100)															
 	if (player.collide(target)) {
 		player.velocity.y = 0
 		game = false
@@ -150,7 +150,7 @@ function end(){
 			console.log(avg_score)
 			text(first_score,525,183)
 			text(avg_score,1125,183)
-		}			}	
+		}				
 		if ((x_score < 40 && x_score > 30) | (x_score > -40 && x_score < -30)){
 			first_score = 6
 			console.log(first_score)		
@@ -191,15 +191,15 @@ function end(){
 			text(first_score,525,183)
 			text(avg_score,1125,183)					
 		}
-		if ((x_score < 50 && x_score > 45) | (x_score > -50 && x_score < -45)){
+		if ((x_score < 115 && x_score > 100) | (x_score > -115 && x_score < -100)){
 			first_score = 1
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
 			text(first_score,525,183)
 			text(avg_score,1125,183)					
-		}
-	}															
+		}				
+	}		
 	if (player.collide(pool)) {
 		game = false
 		player.velocity.y = 0
@@ -234,8 +234,8 @@ function end(){
 		text(first_score,525,183)
 		text(second_score,825,183)
 		text(avg_score,1125,181)
-	}
-	
+	}	
+}
 function restart(){
 	if (game===false && homescreen===false) {
 		fill(0)
@@ -252,3 +252,4 @@ function restart(){
 		}
 	}
 }
+
