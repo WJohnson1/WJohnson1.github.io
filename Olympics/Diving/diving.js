@@ -161,7 +161,7 @@ function end(){
 			text(second_score,625,123)
 			text(avg_score,825,123)		
 		}
-		if ((x_score < 55 && x_score > 40) | (x_score > -50 && x_score < -40)){
+		if ((x_score < 56 && x_score > 40) | (x_score > -56 && x_score < -40)){
 			first_score = 5
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
@@ -170,8 +170,9 @@ function end(){
 			text(second_score,625,123)
 			text(avg_score,825,123)
 		}
-		if ((x_score < 70 && x_score > 55) | (x_score > -70 && x_score < -55)){
-			first_score = 4
+		if ((x_score < 70 && x_score > 56) | (x_score > -70 && x_score < -56)){
+			first_score = 0
+			second_score = 0
 			console.log(first_score)
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
@@ -229,21 +230,21 @@ function end(){
 	}
 	if(player.collide(wall)){
 		player.velocity.x = 0
-		game = false
 		player.velocity.y = 0
-		x_score = target.position.x - player.position.x
-		console.log(x_score)
-		y_score = target.position.y - player.position.y
-		console.log(y_score)
-		first_score = 0
-		console.log(first_score)
-		second_score = 0
-		console.log(second_score)
-		avg_score = 0	
-		console.log(avg_score)
-		text(first_score,425,123)
-		text(second_score,625,123)
-		text(avg_score,825,123)
+		// x_score = target.position.x - player.position.x
+		// console.log(x_score)
+		// y_score = target.position.y - player.position.y
+		// console.log(y_score)
+		// first_score = 0
+		// console.log(first_score)
+		// second_score = 0
+		// console.log(second_score)
+		// avg_score = 0	
+		// console.log(avg_score)
+		// text(first_score,425,123)
+		// text(second_score,625,123)
+		// text(avg_score,825,123)
+		// game = false
 	}	
 }
 function restart(){
