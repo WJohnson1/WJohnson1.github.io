@@ -231,19 +231,15 @@ function end(){
 	if(player.collide(wall)){
 		player.velocity.x = 0
 		player.velocity.y = 0
-		// x_score = target.position.x - player.position.x
-		// console.log(x_score)
-		// y_score = target.position.y - player.position.y
-		// console.log(y_score)
-		// first_score = 0
-		// console.log(first_score)
-		// second_score = 0
-		// console.log(second_score)
-		// avg_score = 0	
-		// console.log(avg_score)
-		// text(first_score,425,123)
-		// text(second_score,625,123)
-		// text(avg_score,825,123)
+		first_score = 0
+		console.log(first_score)
+		second_score = 0
+		console.log(second_score)
+		avg_score = 0	
+		console.log(avg_score)
+		text(first_score,425,123)
+		text(second_score,625,123)
+		text(avg_score,825,123)
 		// game = false
 	}	
 }
