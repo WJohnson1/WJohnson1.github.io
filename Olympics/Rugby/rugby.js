@@ -77,13 +77,14 @@ function setup(){
 }
 function draw(){
 	if (homescreen === true) {
-		background(0)
+		background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
-		text("Are You Ready to Face the Best Rugby Team in the World", 75,100)
-		text("Press Spacebar to move",375,250)
+		text("Are You Ready to Face the Best Rugby Team in the World", 25,100)
+		text("Use Arrow Keys to Move",375,250)
 		textSize(25)
-		text("(the faster you press it the faster you go)",425,275)
+		text("Take the Rugby Ball to the endzone",400,275)
+		text("Do it 5 times and yoour team wins",400,350)
 		textSize(50)
 		text("Press Enter to Start",425,450)
 		if (keyCode === ENTER){
