@@ -388,27 +388,27 @@ function end(){
 	}
 	if (player.collide(goal2)) {
 		if (round1 === true){
-			score ++
+			score = score + 1
 			round1 = false
 			barrier1.remove()
 		}	
 		if (round2 === true){
-			score ++
+			score = score + 1
 			round2 = false
 			barrier2.remove()
 		}	
 		if (round3 === true){
-			score ++
+			score = score + 1
 			round3 = false
 			barrier3.remove()
 		}	
 		if (round4 === true){
-			score ++
+			score = score + 1
 			round4 = false
 			barrier4.remove()
 		}
 		if (round5 === true && round4 === false){
-			score = 5
+			score = score + 1
 			round5 = false
 			youWin()
 		}	
