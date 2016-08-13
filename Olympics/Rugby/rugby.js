@@ -117,11 +117,7 @@ function draw(){
 		text("Press Enter to Play Again",75,490)
 		if (keyCode === ENTER) {
 			background(0,255,0)
-			a.remove()
 			e.remove()
-			g.remove()
-			f.remove()
-			b.remove()
 			p1.remove()
 			p2.remove()
 			p3.remove()
@@ -391,37 +387,27 @@ function end(){
 	}
 	if (player.collide(goal2)) {
 		if (round1 === true){
-			b = createSprite(250,100,75,75)
-			b.shapeColor = color(0,255,0)
-			text("1", 250,100)
+			score ++
 			round1 = false
 			barrier1.remove()
 		}	
 		if (round2 === true){
-			f = createSprite(250,100,75,75)
-			f.shapeColor = color(0,255,0)
-			text("2", 250,100)
+			score ++
 			round2 = false
 			barrier2.remove()
 		}	
 		if (round3 === true){
-			g = createSprite(250,100,75,75)
-			g.shapeColor = color(0,255,0)	
-			text("3", 250,100)
+			score ++
 			round3 = false
 			barrier3.remove()
 		}	
 		if (round4 === true){
-			e = createSprite(250,100,75,75)
-			e.shapeColor = color(0,255,0)
-			text("4", 250,100)
+			score ++
 			round4 = false
 			barrier4.remove()
 		}
 		if (round5 === true && round4 === false){
-			a = createSprite(250,100,75,75)
-			a.shapeColor = color(0,255,0)
-			text("5", 250,100)
+			score = 5
 			round5 = false
 			youWin()
 		}	
@@ -429,6 +415,9 @@ function end(){
 }
 function youWin(){
 	score = 5
+	e = createSprite(250,100,75,75)
+	e.shapeColor = color(0,255,0)
+	text("5",250,100)
 	game = false
 	text("You Win", 200,390)
 }
