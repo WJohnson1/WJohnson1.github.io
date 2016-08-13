@@ -159,6 +159,7 @@ function playerMovement(){
 		player.setSpeed(speed,270)
 	}
 	if (keyDown(39)) {
+		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Rugby/player.png"))
 		player.setSpeed(speed,0)
 	}
 	if (keyDown(40)) {
