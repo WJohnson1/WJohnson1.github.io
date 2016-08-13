@@ -414,6 +414,7 @@ function end(){
 }
 function youWin(){
 	score = 5
+	e = createSprite(250,100,50,50)
 	game = false
 	text("You Win", 200,390)
 }
