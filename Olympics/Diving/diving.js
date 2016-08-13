@@ -47,7 +47,7 @@ function setup(){
 }
 function draw(){
 	if (homescreen === true) {
-		background(0)
+		background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
 		text("Can You Get A Perfect Score", 100,100)
