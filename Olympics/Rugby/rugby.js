@@ -8,6 +8,7 @@ var round2
 var round3
 var round4
 var round5
+var ad = true
 function setup(){
 	homescreen = true
 	game = false
@@ -397,9 +398,10 @@ function end(){
 			round2 = false
 			barrier2.remove()
 		}	
-		if (round3 === true){
+		if (round3 === true && ad === true){
 			score = score + 1
 			round3 = false
+			ad = false
 			barrier3.remove()
 		}	
 		if (round4 === true){
