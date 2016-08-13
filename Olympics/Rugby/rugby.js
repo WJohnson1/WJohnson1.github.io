@@ -152,6 +152,7 @@ function getBall5(){
 }
 function playerMovement(){
 	if (keyDown(37)) {
+		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Rugby/player2.png"))
 		player.setSpeed(speed,180)
 	}
 	if (keyDown(38)) {
