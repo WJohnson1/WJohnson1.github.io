@@ -413,7 +413,6 @@ function end(){
 		if (round5 === true && round4 === false){
 			score = score + 1
 			round5 = false
-			score = 5
 			youWin()
 		}	
 	}
