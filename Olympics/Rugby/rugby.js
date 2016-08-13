@@ -95,7 +95,7 @@ function draw(){
 	if (game === true && homescreen === false){
 		background(0,255,0)
 		textSize(40)
-		text("0", 250,100)
+		text(score, 250,100)
 		text("Get to the End Zone with the ball", 50,200)
 		textSize(25)	
 		text("Without the Defenders Getting You", 125,275)
