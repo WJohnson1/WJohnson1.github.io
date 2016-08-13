@@ -95,7 +95,7 @@ function draw(){
 	if (game === true && homescreen === false){
 		background(0,255,0)
 		textSize(40)
-		consol.log(score)
+		console.log(score)
 		text(score, 250,100)
 		text("Get to the End Zone with the ball", 50,200)
 		textSize(25)	
