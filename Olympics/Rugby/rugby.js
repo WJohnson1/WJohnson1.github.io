@@ -45,19 +45,19 @@ function setup(){
   	ball5.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/ball.png")) 
   	barrier4 = createSprite(50,25,50,50)
   	barrier4.shapeColor = color(0,255,0)  	  		
-	p1 = createSprite(1250,150,25,35)
+	p1 = createSprite(1250,150,25,25)
   	p1.shapeColor= color(255,0,0)
-	p2 = createSprite(1250,300,25,35)
+	p2 = createSprite(1250,300,25,25)
   	p2.shapeColor= color(255,0,0)
-	p3 = createSprite(1250,450,25,35)
+	p3 = createSprite(1250,450,25,25)
   	p3.shapeColor= color(255,0,0)
-	e1 = createSprite(1250,75,25,35)
+	e1 = createSprite(1250,75,25,25)
   	e1.shapeColor= color(255,0,0)
-	e2 = createSprite(1250,225,25,35)
+	e2 = createSprite(1250,225,25,25)
   	e2.shapeColor= color(255,0,0)
-	e3 = createSprite(1250,375,25,35)
+	e3 = createSprite(1250,375,25,25)
   	e3.shapeColor= color(255,0,0)
-	e4 = createSprite(1250,525,25,35)
+	e4 = createSprite(1250,525,25,25)
   	e4.shapeColor= color(255,0,0)
 	goal2 = createSprite(1320,300,50,600)
   	goal2.shapeColor= color(255,255,0)  	
@@ -406,7 +406,7 @@ function end(){
 			barrier4.remove()
 		}
 		if (round5 === true && round4 === false){
-			score ++
+			score = 5
 			round5 = false
 			youWin()
 		}	
