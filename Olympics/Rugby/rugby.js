@@ -99,7 +99,6 @@ function draw(){
 		text("Get to the End Zone with the ball", 50,200)
 		textSize(25)	
 		text("Without the Defenders Getting You", 125,275)
-		text("Bringing more balls to the endzone increases your score", 25,325)
 		player.overlap(ball,getBall)
 		player.overlap(ball2,getBall2)
 		player.overlap(ball3,getBall3)
@@ -414,7 +413,7 @@ function end(){
 	}
 }
 function youWin(){
-	score ++
+	score = 5
 	game = false
 	text("You Win", 200,390)
 }
