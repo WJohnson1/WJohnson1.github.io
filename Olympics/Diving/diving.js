@@ -40,7 +40,7 @@ function setup(){
 	player = createSprite(25,250,25,25)
 	player.shapeColor = color(255,0,255)
 	player.velocity.y = 0
-	player.velocity.x = 0
+	player.velocity.x = .3
 	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
 }
 function draw(){
@@ -72,8 +72,6 @@ function draw(){
 	restart()
 }	
 function jump(){
-	player.velocity.y = 0
-	player.velocity.x = 0
 	if (jumping === false && player.position.y >= 275 && j === true) {
 		player.velocity.y = -1
 		player.velocity.x = .5	
@@ -98,7 +96,7 @@ function end(){
 	if (player.collide(target)) {
 		player.velocity.y = 0
 		game = false
-		x_score = target.position.x - player.position.x
+		x_score = target.position.x - player.position.x 
 		console.log(x_score)
 		y_score = target.position.y - player.position.y
 		console.log(y_score)
