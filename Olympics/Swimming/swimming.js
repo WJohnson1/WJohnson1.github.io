@@ -136,7 +136,8 @@ function playerMovement(){
 function dplayer(){
 if (player.collide(end)){
     	d_player = end.position.x - player.position.x
-    	d_opponent = end.position.x - opponent.position.x
+    	console.log(end.position.x - player.position.x)
+        d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
     	d_opponent2 = end.position.x - opponent2.position.x
     	d_opponent3 = end.position.x - opponent3.position.x
