@@ -68,9 +68,7 @@ function draw(){
 		if (keyDown(90)){
 			j = true
         }	
-		if (j === true) {
-			jump()	
-		}
+		jump()	
 		drawSprites()
 		end()
 	}
@@ -83,6 +81,7 @@ function jump(){
 		jumping = true
 		console.log(player.velocity.y)
 		if (jumping === true && player.position.y-limit > 0) {
+			console.log(player.position.y - limit)
 			player.velocity.y = player.velocity.y - gravity/0.25;
 			console.log(player.velocity.y)
 		}
