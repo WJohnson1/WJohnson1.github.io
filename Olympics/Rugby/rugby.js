@@ -9,6 +9,9 @@ var round3
 var round4
 var round5
 var ad = true
+var ac = true
+var ab = true
+var aa = true
 function setup(){
 	homescreen = true
 	game = false
@@ -389,14 +392,16 @@ function end(){
 		text("Game Over", 200,390)
 	}
 	if (player.collide(goal2)) {
-		if (round1 === true){
+		if (round1 === true && aa === true){
 			score = score + 1
 			round1 = false
+			aa = false
 			barrier1.remove()
 		}	
-		if (round2 === true){
+		if (round2 === true && ab === true){
 			score = score + 1
 			round2 = false
+			ab = false
 			barrier2.remove()
 		}	
 		if (round3 === true && ad === true){
@@ -405,9 +410,10 @@ function end(){
 			ad = false
 			barrier3.remove()
 		}	
-		if (round4 === true){
+		if (round4 === true && ac === true){
 			score = score + 1
 			round4 = false
+			ac = false
 			barrier4.remove()
 		}
 		if (round5 === true && round4 === false){
