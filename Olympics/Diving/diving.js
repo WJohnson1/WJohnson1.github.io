@@ -61,9 +61,8 @@ function draw(){
 	}
 	if (game === true) {
 		background(0,0,255)
-		textSize(25)
 		fill(255)
-		text("Press Spacebar to Start",25,450)
+		text("Press Spacebar to Start",25,50)
 		setTimeout(rotate,1000)
 		if (keyDown(32)){
 			player.velocity.y = -1
