@@ -62,14 +62,13 @@ function draw(){
 	if (game === true) {
 		background(0,0,255)
 		fill(255)
-		text("Press Spacebar to Start",25,50)
-		setTimeout(rotate,1000)
 		if (keyDown(32)){
 			player.velocity.y = -1
 			player.velocity.x = 0.3
         }	
 		jump()	
 		drawSprites()
+		text("Press J to Start",25,50)
 		end()
 	}
 	restart()
