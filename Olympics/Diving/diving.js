@@ -74,7 +74,7 @@ function jump(){
 		player.velocity.x = .5
 		p1 = true	
 	}
-	if (jumping === false && player.position.y <=150 && p1 = true) {
+	if (jumping === false && player.position.y <=150 && p1 === true) {
 		player.velocity.y = player.velocity.y + 3;
 		player.velocity.x = 10
 		console.log(player.velocity.y)
