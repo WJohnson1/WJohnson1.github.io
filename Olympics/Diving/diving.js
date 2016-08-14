@@ -10,7 +10,7 @@ var second_score
 var third_score
 var hello
 var diver_image
-var p1 = false
+var j = false
 function setup(){
 	count = 0
 	homescreen = true
@@ -62,6 +62,9 @@ function draw(){
 	if (game === true) {
 		background(0,0,255)
 		setTimeout(rotate,1000)
+		if (keyDown(90)){
+			j = true
+        }	
 		jump()	
 		drawSprites()
 		end()
@@ -69,10 +72,9 @@ function draw(){
 	restart()
 }	
 function jump(){
-	if (jumping === false && player.position.y >= 275) {
+	if (jumping === false && player.position.y >= 275 && j === true) {
 		player.velocity.y = -1
-		player.velocity.x = .5
-		p1 = true	
+		player.velocity.x = .5	
 	}
 	if (jumping === false && player.position.y <=150) {
 		player.velocity.y = player.velocity.y + 3;
