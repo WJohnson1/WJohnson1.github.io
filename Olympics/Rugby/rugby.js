@@ -154,18 +154,18 @@ function getBall5(){
 	round5 = true
 }
 function playerMovement(){
-	if (keyDown(37)) {
+	if (keyDown(65)) {
 		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Rugby/player2.png"))
 		player.setSpeed(speed,180)
 	}
-	if (keyDown(38)) {
+	if (keyDown(87)) {
 		player.setSpeed(speed,270)
 	}
-	if (keyDown(39)) {
+	if (keyDown(68)) {
 		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Rugby/player.png"))
 		player.setSpeed(speed,0)
 	}
-	if (keyDown(40)) {
+	if (keyDown(83)) {
 		player.setSpeed(speed,90)
 	}
 }
