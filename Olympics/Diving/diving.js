@@ -10,6 +10,7 @@ var second_score
 var third_score
 var hello
 var diver_image
+var j = false
 function preLoad(){
 	diver_image = loadImage("WJohnson1.github.io/Olympics/Diving/diver.png")
 }
@@ -71,7 +72,7 @@ function draw(){
 	restart()
 }	
 function jump(){
-	if (jumping === false && keyDown(37) && player.position.y >= 275) {
+	if (jumping === false && keyDown(37) && player.position.y >= 275 && j === true) {
 		player.velocity.y = -1
 		player.velocity.x = .5	
 		jumping = true

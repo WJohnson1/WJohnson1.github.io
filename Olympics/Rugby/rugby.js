@@ -92,7 +92,7 @@ function draw(){
 		textSize(50)
 		fill(255,255,255)
 		text("Are You Ready to Face the Best Rugby Team in the World", 25,100)
-		text("Use Arrow Keys to Move",375,250)
+		text("Use WASD to Move",425,250)
 		textSize(25)
 		text("Take the Rugby Ball to the endzone",425,275)
 		text("Do it 5 times and your team wins",425,350)
