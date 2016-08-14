@@ -96,7 +96,7 @@ function end(){
 	if (player.collide(target)) {
 		player.velocity.y = 0
 		game = false
-		x_score = target.position.x - player.position.x - 37.5
+		x_score = target.position.x - player.position.x
 		console.log(x_score)
 		y_score = target.position.y - player.position.y
 		console.log(y_score)
