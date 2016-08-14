@@ -11,9 +11,6 @@ var third_score
 var hello
 var diver_image
 var j = false
-function preLoad(){
-	diver_image = loadImage("WJohnson1.github.io/Olympics/Diving/diver.png")
-}
 function setup(){
 	count = 0
 	homescreen = true
@@ -78,7 +75,6 @@ function jump(){
 	if (jumping === false && player.position.y >= 275 && j === true) {
 		player.velocity.y = -1
 		player.velocity.x = .5	
-		jumping = false
 	}
 	if (jumping === false && player.position.y <=150) {
 		player.velocity.y = player.velocity.y + 3;
@@ -88,6 +84,7 @@ function jump(){
 	}
 	if (player.velocity.y === 2) {
 		if (keyCode === ENTER){
+			player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer2.png"))
 			player.velocity.x = 0
 			player.velocity.y = 10
 		}
