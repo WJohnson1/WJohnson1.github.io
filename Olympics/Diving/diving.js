@@ -65,6 +65,7 @@ function draw(){
 		if (keyDown(74)){
 			player.velocity.y = -1
 			player.velocity.x = 0.3
+        	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer3.png"))
         }	
 		jump()	
 		drawSprites()
@@ -78,7 +79,6 @@ function jump(){
 	if (jumping === false && player.position.y >= 275 && j === true) {
 		player.velocity.y = -1
 		player.velocity.x = .5	
-		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer3.png"))
 	}
 	if (jumping === false && player.position.y <=150) {
 		player.velocity.y = player.velocity.y + 3;
