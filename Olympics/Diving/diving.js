@@ -40,7 +40,7 @@ function setup(){
 	player = createSprite(25,250,25,25)
 	player.shapeColor = color(255,0,255)
 	player.velocity.y = 0
-	player.velocity.x = .3
+	player.velocity.x = 0
 	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
 }
 function draw(){
@@ -63,7 +63,8 @@ function draw(){
 		background(0,0,255)
 		setTimeout(rotate,1000)
 		if (keyDown(90)){
-			j = true
+			player.velocity.y = -1
+			player.velocity.x = 0.3
         }	
 		jump()	
 		drawSprites()
