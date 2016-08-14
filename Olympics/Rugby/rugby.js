@@ -131,6 +131,7 @@ function draw(){
 		text("Press Enter to Play Again",75,490)
 		if (keyCode === ENTER) {
 			background(0,255,0)
+			e.remove()
 			p1.remove()
 			p2.remove()
 			p3.remove()
@@ -436,7 +437,7 @@ function youWin(){
 	score = score + 1
 	game = false
 	e = createSprite(250,100,50,50)
-  	ball2.shapeColor = color(0,255,0)
+  	e.shapeColor = color(0,255,0)
 
 	text("You Win", 200,390)
 }
