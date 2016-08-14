@@ -68,46 +68,46 @@ function draw(){
 		if (keyDown(90)){
 			j = true
         }	
-		jump()
+		if (j === true) {
+			jump()	
+		}
 		drawSprites()
 		end()
 	}
 	restart()
 }	
 function jump(){
-	if (j===true) {
-		if (jumping === false && player.position.y >= 275) {
-			player.velocity.y = -1
-			player.velocity.x = .5	
-			jumping = true
+	if (jumping === false && player.position.y >= 275 && j === true) {
+		player.velocity.y = -1
+		player.velocity.x = .5	
+		jumping = true
+		console.log(player.velocity.y)
+		if (jumping === true && player.position.y-limit > 0) {
+			player.velocity.y = player.velocity.y - gravity/0.25;
 			console.log(player.velocity.y)
-			if (jumping === true && player.position.y-limit > 0) {
-				player.velocity.y = player.velocity.y - gravity/0.25;
-				console.log(player.velocity.y)
-			}
-		}	
-		if (player.position.y-limit < 0 && jumping === true) {
-			jumping = false
-			player.velocity.y = 0
-			player.velocity.x = player.velocity.x + 100
-			console.log(player.velocity.y)
-			console.log(player.velocity.x)
-			hello = true
 		}
-		if (jumping === false && player.position.y <=150) {
-			player.velocity.y = player.velocity.y + 3;
-			player.velocity.x = 10
-			console.log(player.velocity.y)
-			console.log(player.velocity.x)
-		}
-		if (player.velocity.y === 2) {
-			if (keyCode === ENTER){
-				player.velocity.x = 0
-				player.velocity.y = 10
-			}
+	}	
+	if (player.position.y-limit < 0 && jumping === true) {
+		jumping = false
+		player.velocity.y = 0
+		player.velocity.x = player.velocity.x + 100
+		console.log(player.velocity.y)
+		console.log(player.velocity.x)
+		hello = true
+	}
+	if (jumping === false && player.position.y <=150) {
+		player.velocity.y = player.velocity.y + 3;
+		player.velocity.x = 10
+		console.log(player.velocity.y)
+		console.log(player.velocity.x)
+	}
+	if (player.velocity.y === 2) {
+		if (keyCode === ENTER){
+			player.velocity.x = 0
+			player.velocity.y = 10
 		}
 	}
-}	
+}
 function end(){
 	fill(255,0,0)
 	textSize(100)															
