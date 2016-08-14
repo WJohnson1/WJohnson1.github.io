@@ -41,7 +41,7 @@ function setup(){
 	player.shapeColor = color(255,0,255)
 	player.velocity.y = 0
 	player.velocity.x = 0
-	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
+	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer1.png"))
 }
 function draw(){
 	if (homescreen === true) {
@@ -78,10 +78,12 @@ function jump(){
 	if (jumping === false && player.position.y >= 275 && j === true) {
 		player.velocity.y = -1
 		player.velocity.x = .5	
+		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer3.png"))
 	}
 	if (jumping === false && player.position.y <=150) {
 		player.velocity.y = player.velocity.y + 3;
 		player.velocity.x = 10
+		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
 		console.log(player.velocity.y)
 		console.log(player.velocity.x)
 	}
