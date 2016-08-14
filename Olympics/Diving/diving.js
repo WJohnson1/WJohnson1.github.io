@@ -62,12 +62,13 @@ function draw(){
 	if (game === true) {
 		background(0,0,255)
 		fill(255)
-		if (keyDown(32)){
+		if (keyDown(74)){
 			player.velocity.y = -1
 			player.velocity.x = 0.3
         }	
 		jump()	
 		drawSprites()
+		textSize(25)
 		text("Press J to Start",25,50)
 		end()
 	}
