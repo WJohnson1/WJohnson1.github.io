@@ -72,6 +72,9 @@ function draw(){
 	restart()
 }	
 function jump(){
+	player.velocity.y = 0
+	player.velocity.x = 0
+	player.velocity.y = 300
 	if (jumping === false && player.position.y >= 275 && j === true) {
 		player.velocity.y = -1
 		player.velocity.x = .5	
