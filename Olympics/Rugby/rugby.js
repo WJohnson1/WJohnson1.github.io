@@ -84,7 +84,7 @@ function setup(){
   	wall4.shapeColor= color(255,255,255)
   	player = createSprite(300,75,25,25)
   	player.shapeColor= color(0,0,255)
-  	player.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/player.png")) 
+  	player.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/player1.png")) 
 }
 function draw(){
 	if (homescreen === true) {
@@ -191,9 +191,11 @@ function computerMovement(){
  //      		angle2 = 0
  //      		angle3 = 0
  //      		angle4 = 180
+ //				e1.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e2.png"))
  //      		angle5 = 270
  //      		angle6 = 90
  //      		angle7 = 180
+ //				e4.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e2.png"))
  //    	}
  //    	if(this.choice === 2){
 	// 	    speed1 = 2.5
@@ -206,6 +208,7 @@ function computerMovement(){
  //      		angle4 = 90
  //      		angle5 = 0
  //      		angle6 = 180
+ //				e3.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e2.png"))
  //      		angle7 = 0
 	//     }
  //    	if(this.choice === 3){
@@ -215,9 +218,11 @@ function computerMovement(){
  //      		speed4 = 5      		
  //      		angle = 0
  //      		angle2 = 180
+ //				p2.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e2.png"))
  //      		angle3 = 90
  //      		angle4 = 0
  //      		angle5 = 180
+ //				e2.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e2.png"))
  //      		angle6 = 270
  //      		angle7 = 90
  //    	}
@@ -227,8 +232,10 @@ function computerMovement(){
  //      		speed3 = 5
  //      		speed4 = 7.5
  //      		angle = 180
+ //				p1.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e2.png"))
  //      		angle2 = 270
  //      		angle3 = 180
+ //				p3.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e2.png"))
  //      		angle4 = 270
  //      		angle5 = 90
  //      		angle6 = 0
