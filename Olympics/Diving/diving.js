@@ -80,11 +80,6 @@ function jump(){
 		player.velocity.x = .5	
 		jumping = true
 		console.log(player.velocity.y)
-		if (jumping === true && player.position.y-limit > 0) {
-			console.log(player.position.y - limit)
-			player.velocity.y = player.velocity.y - gravity/0.25;
-			console.log(player.velocity.y)
-		}
 	}	
 	if (player.position.y-limit < 0 && jumping === true) {
 		jumping = false
