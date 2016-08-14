@@ -62,7 +62,7 @@ function draw(){
 	if (game === true) {
 		background(0,0,255)
 		setTimeout(rotate,1000)
-		if (keyDown(90)){
+		if (keyDown(32)){
 			player.velocity.y = -1
 			player.velocity.x = 0.3
         }	
