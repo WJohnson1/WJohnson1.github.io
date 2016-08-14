@@ -146,7 +146,7 @@ if (player.collide(end)){
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
         console.log(d_player)
-    	if (d_player <= 18.5){
+    	if (d_player <= 32){
     		text("1",1320,55)
     	}
     	if (d_opponent<d_opponent1 && d_opponent<d_opponent2 && d_opponent < d_opponent3 && d_opponent<d_opponent4 && d_opponent<d_opponent5 && d_opponent < d_opponent6){
@@ -323,7 +323,7 @@ if (opponent.collide(end)){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
-    	if (d_opponent <= 18.5){
+    	if (d_opponent <= 32){
     		text("1",1320,130)
     	}
     	if (d_player<d_opponent1 && d_player<d_opponent2 && d_player < d_opponent3 && d_player<d_opponent4 && d_player<d_opponent5 && d_player < d_opponent6){
@@ -500,7 +500,7 @@ if (opponent1.collide(end)){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
-    	if (d_opponent1 <= 18.5){
+    	if (d_opponent1 <= 32){
     		text("1",1320,205)	
     	}
        	if (d_player<d_opponent && d_player<d_opponent2 && d_player < d_opponent3 && d_player<d_opponent4 && d_player<d_opponent5 && d_player < d_opponent6){
@@ -677,7 +677,7 @@ function dopponent2(){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
-    	if (d_opponent2 <= 18.5){
+    	if (d_opponent2 <= 32){
     		text("1",1320,280)
     	}
        	if (d_player<d_opponent && d_player<d_opponent1 && d_player < d_opponent3 && d_player<d_opponent4 && d_player<d_opponent5 && d_player < d_opponent6){
@@ -854,7 +854,7 @@ function dopponent3(){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
-    	if (d_opponent3 <= 18.5){
+    	if (d_opponent3 <= 32){
     		text("1",1320,355)
     	}
        	if (d_player<d_opponent && d_player<d_opponent1 && d_player < d_opponent2 && d_player<d_opponent4 && d_player<d_opponent5 && d_player < d_opponent6){
@@ -1031,7 +1031,7 @@ function dopponent4(){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
-    	if (d_opponent4 <= 18.5){
+    	if (d_opponent4 <= 32){
     		text("1",1320,430)
     	}
     	if (d_player<d_opponent && d_player<d_opponent1 && d_player < d_opponent2 && d_player<d_opponent3 && d_player<d_opponent5 && d_player < d_opponent6){
@@ -1208,7 +1208,7 @@ function dopponent5(){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
-    	if (d_opponent5 <= 18.5){
+    	if (d_opponent5 <= 32){
     		text("1",1320,505)
     	}
     	if (d_player<d_opponent && d_player<d_opponent1 && d_player < d_opponent2 && d_player<d_opponent3 && d_player<d_opponent4 && d_player < d_opponent6){
@@ -1385,7 +1385,7 @@ function dopponent6(){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
-    	if (d_opponent6 <= 18.5){
+    	if (d_opponent6 <= 32){
     		text("1",1320,580)
     	}
     	if (d_player<d_opponent && d_player<d_opponent1 && d_player < d_opponent2 && d_player<d_opponent3 && d_player<d_opponent4 && d_player < d_opponent5){
