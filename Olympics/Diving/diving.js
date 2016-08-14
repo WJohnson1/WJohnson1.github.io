@@ -65,6 +65,9 @@ function draw(){
 	if (game === true) {
 		background(0,0,255)
 		setTimeout(rotate,1000)
+		if (keyDown(32)){
+			j = true	
+		}	
 		jump()
 		drawSprites()
 		end()
@@ -72,7 +75,7 @@ function draw(){
 	restart()
 }	
 function jump(){
-	if (jumping === false && keyDown(37) && player.position.y >= 275 && j === true) {
+	if (j === true) {
 		player.velocity.y = -1
 		player.velocity.x = .5	
 		jumping = true
