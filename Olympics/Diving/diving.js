@@ -154,9 +154,10 @@ function end(){
 			text(avg_score,825,123)		
 		}
 		if ((x_score < 56 && x_score > 40) | (x_score > -56 && x_score < -40)){
-			first_score = 5
+			first_score = 0
+			second_score = 0
 			console.log(first_score)
-			avg_score = (first_score + second_score)/2
+			avg_score = 0
 			console.log(avg_score)
 			text(first_score,425,123)
 			text(second_score,625,123)
