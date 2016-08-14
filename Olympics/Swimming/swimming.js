@@ -11,7 +11,6 @@ var d_opponent6
 var homescreen
 var game
 var movement
-
 function setup(){
 	x = 0
 	game = true
@@ -20,20 +19,28 @@ function setup(){
 	createCanvas(1350,590)
   	player = createSprite(25,35,25,25)
   	player.shapeColor= color(255,255,255)
+    player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))     
   	opponent = createSprite(25,110,25,25)
   	opponent.shapeColor= color(255,255,255)
+    opponent.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
   	opponent1 = createSprite(25,185,25,25)
   	opponent1.shapeColor= color(255,255,255)
+    opponent1.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
   	opponent2 = createSprite(25,260,25,25)
   	opponent2.shapeColor= color(255,255,255)
+    opponent2.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
   	opponent3 = createSprite(25,335,25,25)
   	opponent3.shapeColor= color(255,255,255)
+    opponent3.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
   	opponent4 = createSprite(25,410,25,25)
   	opponent4.shapeColor= color(255,255,255)
+    opponent4.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
   	opponent5 = createSprite(25,485,25,25)
   	opponent5.shapeColor= color(255,255,255)
+    opponent5.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
   	opponent6 = createSprite(25,560,25,25)
   	opponent6.shapeColor= color(255,255,255)
+    opponent6.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
   	wall1 = createSprite(0,0,2700, 10)
   	wall1.shapeColor = color(255,0,0)
   	wall2 = createSprite(0,75,2700, 10)
