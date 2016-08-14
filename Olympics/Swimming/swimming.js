@@ -144,6 +144,7 @@ if (player.collide(end)){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
+        console.log(d_player)
     	if (d_player <= 18.5){
     		text("1",1320,55)
     	}
