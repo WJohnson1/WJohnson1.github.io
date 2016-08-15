@@ -222,6 +222,8 @@ function draw(){
 		textSize(40)
 		console.log(score)
 		text(score, 250,100)
+	    team = createSprite(260,40,25,25)
+        team.addImage(loadImage(yourteam))	
 		text("Get to the End Zone with the ball", 50,200)
 		textSize(25)	
 		text("Without the Defenders Getting You", 125,275)
