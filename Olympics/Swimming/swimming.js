@@ -100,7 +100,7 @@ function draw(){
         textSize(50)
         text("Press the key under the country you want to play as",70,50)
         textSize(25)
-        text("0",70,200)
+        text("0",325,225)
         drawSprites()
         player.remove()
         opponent.remove()
