@@ -252,7 +252,12 @@ function draw(){
 			background(0,255,0)
 			if (win === true){
 				e.remove()
-			}	
+			}
+			barrier1.remove()
+			barrier2.remove()
+			barrier3.remove()
+			barrier4.remove()
+			halfpoint.remove()	
 			p1.remove()
 			p2.remove()
 			p3.remove()
