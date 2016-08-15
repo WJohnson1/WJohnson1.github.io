@@ -250,7 +250,9 @@ function draw(){
 		text("Press Enter to Play Again",75,490)
 		if (keyCode === ENTER) {
 			background(0,255,0)
-			e.remove()
+			if (win === true){
+				e.remove()
+			}	
 			p1.remove()
 			p2.remove()
 			p3.remove()
