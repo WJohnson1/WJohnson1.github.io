@@ -79,6 +79,7 @@ function setup(){
 function draw(){
 	if (countrymenu === true) {
         background(123,183,166)
+        drawSprites()
         textSize(50)
         text("Press the key under the country you want to play as",70,50)
         textSize(25)
@@ -92,7 +93,6 @@ function draw(){
         text("7",320,550)
         text("8",645,550)
         text("9",970,550)
-        drawSprites()
         if (keyDown(48)) {
             countrymenu = false
             homescreen = true
