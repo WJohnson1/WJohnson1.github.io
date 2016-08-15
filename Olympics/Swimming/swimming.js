@@ -119,6 +119,10 @@ function draw(){
         wall7.remove()
         wall8.remove()
         wall9.remove()
+        if (keyDown(48)) {
+            countrymenu = false
+            homescreen = true
+        }
     }
     if (homescreen === true && countrymenu  === false) {
 		background(123,183,166)
