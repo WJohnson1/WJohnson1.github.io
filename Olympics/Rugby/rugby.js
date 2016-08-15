@@ -85,7 +85,7 @@ function setup(){
   	wall4.shapeColor= color(123,183,166)
   	player = createSprite(300,75,25,25)
   	player.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/player1.png"))
-  	banner = createSprite(300,100,100,50)
+  	banner = createSprite(280,100,100,50)
   	banner.shapeColor= color(123,183,166)
   	border = createSprite(1250,350,50,700)
   	border.shapeColor= color(123,183,166)
