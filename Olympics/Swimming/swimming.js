@@ -108,6 +108,42 @@ function draw(){
             countrymenu = false
             homescreen = true
         }
+        if (keyDown(49)) {
+            countrymenu = false
+            homescreen = true
+        }
+        if (keyDown(50)) {
+            countrymenu = false
+            homescreen = true
+        }
+        if (keyDown(51)) {
+            countrymenu = false
+            homescreen = true
+        }
+        if (keyDown(52)) {
+            countrymenu = false
+            homescreen = true
+        }
+        if (keyDown(53)) {
+            countrymenu = false
+            homescreen = true
+        }
+        if (keyDown(54)) {
+            countrymenu = false
+            homescreen = true
+        }
+        if (keyDown(55)) {
+            countrymenu = false
+            homescreen = true
+        }
+        if (keyDown(56)) {
+            countrymenu = false
+            homescreen = true
+        }
+        if (keyDown(57)) {
+            countrymenu = false
+            homescreen = true
+        }                                                                        
     }
     if (homescreen === true && countrymenu  === false) {
 		usa.remove()
@@ -120,6 +156,7 @@ function draw(){
         greatb.remove()
         italy.remove()
         mexico.remove()
+        border.remove()
         background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
