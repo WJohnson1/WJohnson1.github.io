@@ -70,9 +70,9 @@ function setup(){
     australia = createSprite(540,350,25,25)
     france = createSprite(810,350,25,25)
     germany = createSprite(1080,350,25,25)
-    greatb = createSprite(325,450,25,25)
-    italy = createSprite(650,450,25,25)
-    mexico = createSprite(975,450,25,25)
+    greatb = createSprite(325,525,25,25)
+    italy = createSprite(650,525,25,25)
+    mexico = createSprite(975,525,25,25)
 }
 function draw(){
 	if (countrymenu === true) {
