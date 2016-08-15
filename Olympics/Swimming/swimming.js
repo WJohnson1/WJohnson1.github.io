@@ -141,7 +141,8 @@ function draw(){
 	}
 	if (homescreen === false && game === true && countrymenu === false) {
 		background(0,0,255)
-		fill(255,255,0)
+		drawSprites()
+        fill(255,255,0)
 		textSize(50)
 		text("Your Lane", 360,60)
 		playerMovement()
