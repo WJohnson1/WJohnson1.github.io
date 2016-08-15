@@ -43,6 +43,8 @@ function setup(){
 	player.velocity.y = 0
 	player.velocity.x = 0
 	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer1.png"))
+	bg = createSprite(675,350,1350,700)
+	bg.shapeColor = color(123,183,166)
 	usa = createSprite(325,175,25,25)
     usa.addImage(loadImage("https://wjohnson1.github.io/Olympics/usa.png"))
     russia = createSprite(650,175,25,25)
