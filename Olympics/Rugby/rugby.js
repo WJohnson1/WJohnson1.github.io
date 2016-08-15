@@ -176,6 +176,16 @@ function draw(){
         }                                                                        
     }
 	if (homescreen === true) {
+		usa.remove()
+        russia.remove()
+        brazil.remove()
+        china.remove()
+        australia.remove()
+        france.remove()
+        germany.remove()
+        greatb.remove()
+        italy.remove()
+        mexico.remove()
 		background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
