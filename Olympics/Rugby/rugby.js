@@ -271,34 +271,23 @@ function draw(){
 	}
 }
 function getBall(){
-	if(aa === true){
-		ball.remove()
-	}	
+	ball.remove()
 }
 function getBall2(){
-	console.log(aa)
-	if(aa === false){
-		ball2.remove()
-		round2 = true
-	}	
+	ball2.remove()
+	round2 = true
 }
 function getBall3(){
-	if(ab === false){
-		ball3.remove()
-		round3 = true
-	}
+	ball3.remove()
+	round3 = true
 }
 function getBall4(){
-	if(ac === false){
-		ball4.remove()
-		round4 = true
-	}	
+	ball4.remove()
+	round4 = true
 }
 function getBall5(){
-	if(ad === false){
-		ball5.remove()
-		round5 = true
-	}	
+	ball5.remove()
+	round5 = true
 }
 function playerMovement(){
 	if (keyDown(65)) {
