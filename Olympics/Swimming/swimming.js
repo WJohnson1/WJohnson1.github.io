@@ -254,7 +254,7 @@ function playerMovement(){
 }
 function dplayer(){
 if (player.collide(end)){
-    player.addImage(loadImage("https://WJohnson1.github.io/Olympics/Swimming/winner.png"))
+    player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -432,7 +432,8 @@ if (player.collide(end)){
 }
 function dopponent(){
 if (opponent.collide(end)){    	
-    	d_player = end.position.x - player.position.x
+        opponent.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
+        d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
     	d_opponent2 = end.position.x - opponent2.position.x
@@ -609,6 +610,7 @@ if (opponent.collide(end)){
 }
 function dopponent1(){
 if (opponent1.collide(end)){
+        opponent1.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
 	   	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -786,7 +788,8 @@ if (opponent1.collide(end)){
 }
 function dopponent2(){
     if (opponent2.collide(end)){
-    	d_player = end.position.x - player.position.x
+    	opponent2.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
+        d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
     	d_opponent2 = end.position.x - opponent2.position.x
@@ -963,6 +966,7 @@ function dopponent2(){
 }
 function dopponent3(){
     if (opponent3.collide(end)){
+        opponent3.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -1140,6 +1144,7 @@ function dopponent3(){
 }
 function dopponent4(){
     if (opponent4.collide(end)){
+        opponent4.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -1317,6 +1322,7 @@ function dopponent4(){
 }
 function dopponent5(){
     if (opponent5.collide(end)){
+        opponent5.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -1494,6 +1500,7 @@ function dopponent5(){
 }
 function dopponent6(){
     if (opponent6.collide(end)){
+        opponent6.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
