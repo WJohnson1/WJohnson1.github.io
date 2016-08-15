@@ -98,7 +98,9 @@ function draw(){
 	if (countrymenu === true) {
         background(123,183,166)
         textSize(50)
-        text("Press the key under the country you want to play as",20,50)
+        text("Press the key under the country you want to play as",70,50)
+        textSize(25)
+        text("0",70,200)
         drawSprites()
         player.remove()
         opponent.remove()
