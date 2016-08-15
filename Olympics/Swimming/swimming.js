@@ -195,8 +195,8 @@ function draw(){
         end.shapeColor = color(255,0,0)
         fill(255,255,0)
 		textSize(50)
-        team = createSprite(260,40,25,25)
-        team.addImage(loadImage(yourteam))
+        teamh = createSprite(260,40,25,25)
+        teamh.addImage(loadImage(yourteam))
         playerMovement()
 		dplayer()
 		dopponent()
@@ -212,8 +212,7 @@ function draw(){
 		textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
-        drawSprites()
-        team.remove()
+        teamh.remove()
 		text("Press Enter to Start a New Game",360,350)
 		if (keyCode === ENTER) {
 			team.remove()
@@ -252,7 +251,7 @@ function playerMovement(){
 }
 function dplayer(){
 if (player.collide(end)){
-    team.remove()
+    teamh.remove()
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
