@@ -11,59 +11,21 @@ var d_opponent6
 var homescreen
 var game
 var movement
+var countrymenu
 function setup(){
 	x = 0
 	game = true
 	movement = true
+    countrymenu = false
 	homescreen = true
 	createCanvas(1350,590)
-  	player = createSprite(25,35,25,25)
-  	player.shapeColor= color(255,255,255)
-    player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))     
-  	opponent = createSprite(25,110,25,25)
-  	opponent.shapeColor= color(255,255,255)
-    opponent.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
-  	opponent1 = createSprite(25,185,25,25)
-  	opponent1.shapeColor= color(255,255,255)
-    opponent1.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
-  	opponent2 = createSprite(25,260,25,25)
-  	opponent2.shapeColor= color(255,255,255)
-    opponent2.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
-  	opponent3 = createSprite(25,335,25,25)
-  	opponent3.shapeColor= color(255,255,255)
-    opponent3.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
-  	opponent4 = createSprite(25,410,25,25)
-  	opponent4.shapeColor= color(255,255,255)
-    opponent4.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
-  	opponent5 = createSprite(25,485,25,25)
-  	opponent5.shapeColor= color(255,255,255)
-    opponent5.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
-  	opponent6 = createSprite(25,560,25,25)
-  	opponent6.shapeColor= color(255,255,255)
-    opponent6.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
-  	wall1 = createSprite(0,0,2700, 10)
-  	wall1.shapeColor = color(255,0,0)
-  	wall2 = createSprite(0,75,2700, 10)
-  	wall2.shapeColor = color(255,0,0)
-  	wall3 = createSprite(0,150,2700, 10)
-  	wall3.shapeColor = color(255,0,0)
-  	wall4 = createSprite(0,225,2700, 10)
-  	wall4.shapeColor = color(255,0,0)  		
-  	wall5 = createSprite(0,300,2700, 10)
-  	wall5.shapeColor = color(255,0,0)
-  	wall6 = createSprite(0,375,2700, 10)
-  	wall6.shapeColor = color(255,0,0)
-  	wall7 = createSprite(0,450,2700, 10)
-  	wall7.shapeColor = color(255,0,0)
-  	wall8 = createSprite(0,525,2700, 10)
-  	wall8.shapeColor = color(255,0,0)
-  	wall9 = createSprite(0,600,2700, 10)
-  	wall9.shapeColor = color(255,0,0)
-  	end = createSprite(1300,0,10, 1200)
-  	end.shapeColor = color(255,0,0)
 }
 function draw(){
-	if (homescreen === true) {
+	if (countrymenu === true) {
+        background(123,183,166)
+        drawSprites()
+    }
+    if (homescreen === true && countrymenu  === false) {
 		background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
@@ -80,7 +42,51 @@ function draw(){
 	}
 	if (homescreen === false && game === true) {
 		background(0,0,255)
-		fill(255,255,0)
+		player = createSprite(25,35,25,25)
+        player.shapeColor= color(255,255,255)
+        player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))     
+        opponent = createSprite(25,110,25,25)
+        opponent.shapeColor= color(255,255,255)
+        opponent.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
+        opponent1 = createSprite(25,185,25,25)
+        opponent1.shapeColor= color(255,255,255)
+        opponent1.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
+        opponent2 = createSprite(25,260,25,25)
+        opponent2.shapeColor= color(255,255,255)
+        opponent2.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
+        opponent3 = createSprite(25,335,25,25)
+        opponent3.shapeColor= color(255,255,255)
+        opponent3.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
+        opponent4 = createSprite(25,410,25,25)
+        opponent4.shapeColor= color(255,255,255)
+        opponent4.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
+        opponent5 = createSprite(25,485,25,25)
+        opponent5.shapeColor= color(255,255,255)
+        opponent5.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
+        opponent6 = createSprite(25,560,25,25)
+        opponent6.shapeColor= color(255,255,255)
+        opponent6.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/swimmer.png"))
+        wall1 = createSprite(0,0,2700, 10)
+        wall1.shapeColor = color(255,0,0)
+        wall2 = createSprite(0,75,2700, 10)
+        wall2.shapeColor = color(255,0,0)
+        wall3 = createSprite(0,150,2700, 10)
+        wall3.shapeColor = color(255,0,0)
+        wall4 = createSprite(0,225,2700, 10)
+        wall4.shapeColor = color(255,0,0)       
+         wall5 = createSprite(0,300,2700, 10)
+        wall5.shapeColor = color(255,0,0)
+        wall6 = createSprite(0,375,2700, 10)
+        wall6.shapeColor = color(255,0,0)
+        wall7 = createSprite(0,450,2700, 10)
+         wall7.shapeColor = color(255,0,0)
+        wall8 = createSprite(0,525,2700, 10)
+        wall8.shapeColor = color(255,0,0)
+        wall9 = createSprite(0,600,2700, 10)
+        wall9.shapeColor = color(255,0,0)
+        end = createSprite(1300,0,10, 1200)
+        end.shapeColor = color(255,0,0)
+        fill(255,255,0)
 		textSize(50)
 		text("Your Lane", 360,60)
 		playerMovement()
@@ -136,8 +142,7 @@ function playerMovement(){
 function dplayer(){
 if (player.collide(end)){
     	d_player = end.position.x - player.position.x
-    	console.log(end.position.x - player.position.x)
-        d_opponent = end.position.x - opponent.position.x
+    	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
     	d_opponent2 = end.position.x - opponent2.position.x
     	d_opponent3 = end.position.x - opponent3.position.x
@@ -145,7 +150,6 @@ if (player.collide(end)){
     	d_opponent5 = end.position.x - opponent5.position.x
     	d_opponent6 = end.position.x - opponent6.position.x
     	game = false
-        console.log(d_player)
     	if (d_player <= 32){
     		text("1",1320,55)
     	}
