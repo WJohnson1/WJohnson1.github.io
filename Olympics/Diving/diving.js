@@ -146,6 +146,7 @@ function draw(){
         greatb.remove()
         italy.remove()
         mexico.remove()	
+		bg.remove()
 		textSize(50)
 		fill(255,255,255)
 		text("Can You Get A Perfect Score", 300,100)
