@@ -66,6 +66,8 @@ function setup(){
   	end.shapeColor = color(123,183,166)
     border = createSprite(32.5,350,70,700)
     border.shapeColor = color(123,183,166)
+    banner = createSprite(675,25,1350,50)
+    banner.shapeColor = color(123,183,166)
     usa = createSprite(325,175,25,25)
     usa.addImage(loadImage("https://wjohnson1.github.io/Olympics/usa.png"))
     russia = createSprite(650,175,25,25)
