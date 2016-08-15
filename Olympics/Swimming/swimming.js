@@ -12,6 +12,7 @@ var homescreen
 var game
 var movement
 var countrymenu
+var yourteam
 function setup(){
 	x = 0
 	game = false
@@ -63,6 +64,8 @@ function setup(){
   	wall9.shapeColor = color(123,183,166)
   	end = createSprite(1300,0,10, 1200)
   	end.shapeColor = color(123,183,166)
+    border = createSprite(32.5,350,70,700)
+    border.shapeColor = color(123,183,166)
     usa = createSprite(325,175,25,25)
     usa.addImage(loadImage("https://wjohnson1.github.io/Olympics/usa.png"))
     russia = createSprite(650,175,25,25)
