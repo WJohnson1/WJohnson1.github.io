@@ -197,7 +197,7 @@ function draw(){
 		textSize(50)
         team = createSprite(260,40,25,25)
         team.addImage(loadImage(yourteam))
-		playerMovement()
+        playerMovement()
 		dplayer()
 		dopponent()
 		dopponent1()
@@ -205,7 +205,8 @@ function draw(){
 		dopponent3()
 		dopponent4()
 		dopponent5()
-		dopponent6()                                                    
+		dopponent6()                      
+        team.remove()                              
 		drawSprites();
 	} 
 	if (game === false && homescreen === false && countrymenu === false) {
