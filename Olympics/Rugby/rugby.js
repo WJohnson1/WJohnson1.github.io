@@ -12,6 +12,7 @@ var ad = true
 var ac = true
 var ab = true
 var aa = true
+var win = false
 function setup(){
 	countrymenu = true
 	homescreen = false
@@ -189,6 +190,8 @@ function draw(){
         greatb.remove()
         italy.remove()
         mexico.remove()
+        banner.remove()
+        border.remove()
 		background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
@@ -237,7 +240,12 @@ function draw(){
 	}
 	if (game === false && homescreen === false && countrymenu === false) {
 		textSize(40)
-		text("5",250,100)
+		if (win === true){
+			text("5",250,100)
+		}
+		if (win === false) {
+			text(score,250,100)
+		}
 		textSize(50)
 		text("Press Enter to Play Again",75,490)
 		if (keyCode === ENTER) {
@@ -547,6 +555,7 @@ function end(){
 function youWin(){
 	score = score + 1
 	game = false
+	win = true
 	e = createSprite(250,100,50,50)
   	e.shapeColor = color(0,255,0)
 
