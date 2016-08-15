@@ -271,23 +271,33 @@ function draw(){
 	}
 }
 function getBall(){
-	ball.remove()
+	if(aa === true){
+		ball.remove()
+	}	
 }
 function getBall2(){
-	ball2.remove()
-	round2 = true
+	if(aa === false){
+		ball2.remove()
+		round2 = true
+	}	
 }
 function getBall3(){
-	ball3.remove()
-	round3 = true
+	if(ab === false){
+		ball3.remove()
+		round3 = true
+	}
 }
 function getBall4(){
-	ball4.remove()
-	round4 = true
+	if(ac === false){
+		ball4.remove()
+		round4 = true
+	}	
 }
 function getBall5(){
-	ball5.remove()
-	round5 = true
+	if(ad === false){
+		ball5.remove()
+		round5 = true
+	}	
 }
 function playerMovement(){
 	if (keyDown(65)) {
@@ -540,16 +550,16 @@ function end(){
 			ab = false
 			barrier2.remove()
 		}	
-		if (round3 === true && ad === true){
+		if (round3 === true && ac === true){
 			score = score + 1
 			round3 = false
-			ad = false
+			ac = false
 			barrier3.remove()
 		}	
-		if (round4 === true && ac === true){
+		if (round4 === true && ad === true){
 			score = score + 1
 			round4 = false
-			ac = false
+			ad = false
 			barrier4.remove()
 		}
 		if (round5 === true && round4 === false){
