@@ -221,7 +221,7 @@ function draw(){
   	  	wall4.shapeColor= color(255,255,255)	  		
 		textSize(40)
 		text(score, 250,100)
-	    team = createSprite(260,100,25,25)
+	    team = createSprite(310,300,25,25)
         team.addImage(loadImage(yourteam))	
 		text("Get to the End Zone with the ball", 50,200)
 		textSize(25)	
