@@ -276,6 +276,7 @@ function getBall(){
 	}	
 }
 function getBall2(){
+	console.log(aa)
 	if(aa === false){
 		ball2.remove()
 		round2 = true
