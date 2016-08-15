@@ -215,7 +215,8 @@ function draw(){
 		textSize(25)
 		text("Press Enter to Start a New Game",360,350)
 		if (keyCode === ENTER) {
-			setup()
+			team.remove()
+            setup()
 		}
 	}
 }	
