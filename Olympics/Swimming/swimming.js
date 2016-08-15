@@ -90,6 +90,7 @@ function setup(){
 function draw(){
 	if (countrymenu === true) {
         background(123,183,166)
+        drawSprites()
         textSize(50)
         text("Press the key under the country you want to play as",70,50)
         textSize(25)
@@ -152,8 +153,7 @@ function draw(){
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/mexico.png"
-        }
-        drawSprites()                                                                        
+        }                                                                        
     }
     if (homescreen === true && countrymenu  === false) {
 		usa.remove()
@@ -212,7 +212,7 @@ function draw(){
 		textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
-        teamh.remove()
+        teamh.update(25,25,25,25)
 		text("Press Enter to Start a New Game",360,350)
 		if (keyCode === ENTER) {
 			teamh.remove()
