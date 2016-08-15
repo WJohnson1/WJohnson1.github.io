@@ -67,6 +67,23 @@ function setup(){
 function draw(){
 	if (countrymenu === true) {
         background(123,183,166)
+        drawSprites()
+        player.remove()
+        opponent.remove()
+        opponent2.remove()
+        opponent3.remove()
+        opponent4.remove()
+        opponent5.remove()
+        opponent6.remove()
+        wall1.remove()
+        wall2.remove()
+        wall3.remove()
+        wall4.remove()
+        wall5.remove()
+        wall6.remove()
+        wall7.remove()
+        wall8.remove()
+        wall9.remove()
     }
     if (homescreen === true && countrymenu  === false) {
 		background(123,183,166)
