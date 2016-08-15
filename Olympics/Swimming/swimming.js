@@ -14,7 +14,7 @@ var movement
 var countrymenu
 function setup(){
 	x = 0
-	game = true
+	game = false
 	movement = true
     countrymenu = true
 	homescreen = false
