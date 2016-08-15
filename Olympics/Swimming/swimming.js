@@ -169,6 +169,7 @@ function draw(){
         italy.remove()
         mexico.remove()
         border.remove()
+        banner.remove()
         background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
