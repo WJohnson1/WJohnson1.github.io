@@ -136,6 +136,16 @@ function draw(){
     }
 	if (homescreen === true) {
 		background(123,183,166)
+		usa.remove()
+        russia.remove()
+        brazil.remove()
+        china.remove()
+        australia.remove()
+        france.remove()
+        germany.remove()
+        greatb.remove()
+        italy.remove()
+        mexico.remove()	
 		textSize(50)
 		fill(255,255,255)
 		text("Can You Get A Perfect Score", 300,100)
@@ -151,6 +161,7 @@ function draw(){
 	}
 	if (game === true) {
 		background(0,0,255)
+		board.shapeColor = color(0,0,0)
 		fill(255)
 		if (keyDown(74)){
 			player.velocity.y = -1
