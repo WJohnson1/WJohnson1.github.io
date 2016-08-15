@@ -90,7 +90,7 @@ function draw(){
         textSize(50)
         text("Press the key under the country you want to play as",70,50)
         textSize(25)
-        text("hello",320,225)
+        text("0",320,225)
         text("1",645,225)
         text("2",970,225)
         text("3",265,375)
