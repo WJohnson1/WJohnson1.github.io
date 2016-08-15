@@ -196,7 +196,7 @@ function draw(){
         end.shapeColor = color(255,0,0)
         fill(255,255,0)
 		textSize(50)
-        team = createSprite(160,60,25,25)
+        team = createSprite(260,40,25,25)
         team.addImage(loadImage(yourteam))
 		playerMovement()
 		dplayer()
