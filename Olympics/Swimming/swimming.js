@@ -99,7 +99,17 @@ function draw(){
         }
     }
     if (homescreen === true && countrymenu  === false) {
-		background(123,183,166)
+		usa.remove()
+        russia.remove()
+        brazil.remove()
+        china.remove()
+        australia.remove()
+        france.remove()
+        germany.remove()
+        greatb.remove()
+        italy.remove()
+        mexico.remove()
+        background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
 		text("Are You Ready to Face the Best Swimmers in the World", 75,100)
@@ -132,6 +142,7 @@ function draw(){
         wall7.shapeColor = color(255,0,0)
         wall8.shapeColor = color(255,0,0)
         wall9.shapeColor = color(255,0,0)
+        end.shapeColor = color(255,0,0)
         fill(255,255,0)
 		textSize(50)
 		text("Your Lane", 360,60)
