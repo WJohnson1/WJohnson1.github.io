@@ -198,8 +198,8 @@ function draw(){
         end.shapeColor = color(255,0,0)
         fill(255,255,0)
 		textSize(50)
-        teamh = createSprite(260,40,25,25)
-        teamh.addImage(loadImage(yourteam))
+        team = createSprite(260,40,25,25)
+        team.addImage(loadImage(yourteam))
         playerMovement()
 		dplayer()
 		dopponent()
@@ -215,10 +215,8 @@ function draw(){
 		textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
-        teamh.update(25,25,25,25)
 		text("Press Enter to Start a New Game",360,350)
 		if (keyCode === ENTER) {
-			teamh.remove()
             setup()
 		}
 	}
@@ -254,7 +252,6 @@ function playerMovement(){
 }
 function dplayer(){
 if (player.collide(end)){
-    player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -432,8 +429,7 @@ if (player.collide(end)){
 }
 function dopponent(){
 if (opponent.collide(end)){    	
-        opponent.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
-        d_player = end.position.x - player.position.x
+    	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
     	d_opponent2 = end.position.x - opponent2.position.x
@@ -610,7 +606,6 @@ if (opponent.collide(end)){
 }
 function dopponent1(){
 if (opponent1.collide(end)){
-        opponent1.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
 	   	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -788,8 +783,7 @@ if (opponent1.collide(end)){
 }
 function dopponent2(){
     if (opponent2.collide(end)){
-    	opponent2.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
-        d_player = end.position.x - player.position.x
+    	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
     	d_opponent2 = end.position.x - opponent2.position.x
@@ -966,7 +960,6 @@ function dopponent2(){
 }
 function dopponent3(){
     if (opponent3.collide(end)){
-        opponent3.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -1144,7 +1137,6 @@ function dopponent3(){
 }
 function dopponent4(){
     if (opponent4.collide(end)){
-        opponent4.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -1322,7 +1314,6 @@ function dopponent4(){
 }
 function dopponent5(){
     if (opponent5.collide(end)){
-        opponent5.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
@@ -1500,7 +1491,6 @@ function dopponent5(){
 }
 function dopponent6(){
     if (opponent6.collide(end)){
-        opponent6.addImage(loadImage("https://wjohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
