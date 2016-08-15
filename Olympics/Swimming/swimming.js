@@ -83,7 +83,7 @@ function draw(){
 			game = true
 		}
 	}
-	if (homescreen === false && game === true) {
+	if (homescreen === false && game === true && countrymenu === false) {
 		background(0,0,255)
 		fill(255,255,0)
 		textSize(50)
@@ -99,7 +99,7 @@ function draw(){
 		dopponent6()                                                    
 		drawSprites();
 	} 
-	if (game === false) {
+	if (game === false && homescreen === false && countrymenu === false) {
 		textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
