@@ -205,9 +205,7 @@ function draw(){
 		dopponent3()
 		dopponent4()
 		dopponent5()
-		dopponent6()                      
-        team.remove()                              
-		drawSprites();
+		dopponent6()                                                    
 	} 
 	if (game === false && homescreen === false && countrymenu === false) {
 		textSize(50)
