@@ -107,43 +107,54 @@ function draw(){
         if (keyDown(48)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/usa.png"
         }
         if (keyDown(49)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/russia.png"
         }
         if (keyDown(50)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/brazil.png"
         }
         if (keyDown(51)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/china.png"
         }
         if (keyDown(52)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/australia.png"
         }
         if (keyDown(53)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/france.png"
         }
         if (keyDown(54)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/germany.png"
         }
         if (keyDown(55)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/greatb.png"
         }
         if (keyDown(56)) {
             countrymenu = false
             homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/italy.png"
         }
         if (keyDown(57)) {
             countrymenu = false
             homescreen = true
-        }                                                                        
+            yourteam = "https://wjohnson1.github.io/Olympics/mexico.png"
+        }
+        console.log(yourteam)                                                                        
     }
     if (homescreen === true && countrymenu  === false) {
 		usa.remove()
