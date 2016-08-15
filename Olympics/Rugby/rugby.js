@@ -225,7 +225,9 @@ function draw(){
 		text("Get to the End Zone with the ball", 50,200)
 		textSize(25)	
 		text("Without the Defenders Getting You", 125,275)
-		player.overlap(ball,getBall)
+		if(aa=== true){
+			player.overlap(ball,getBall)
+		}
 		player.overlap(ball2,getBall2)
 		player.overlap(ball3,getBall3)
 		player.overlap(ball4,getBall4)
@@ -306,71 +308,71 @@ function playerMovement(){
 	}
 }
 function computerMovement(){	
-	if (game === true) {
-	    if(millis() > this.delay){
-        	this.choice = int(random(1,5))
-        	this.delay = millis() + 500
-    	}
-    	if(this.choice === 1){
-      		speed1 = 5
-      		speed2 = 2.5
-      		speed3 = 10
-      		speed4 = 7.5
-      		angle = 90
-      		angle2 = 0
-      		angle3 = 0
-      		angle4 = 180
-      		angle5 = 270
-      		angle6 = 90
-      		angle7 = 180
-    	}
-    	if(this.choice === 2){
-		    speed1 = 2.5
-      		speed2 = 5
-      		speed3 = 7.5
-      		speed4 = 10 
-		    angle = 270
-      		angle2 = 90
-      		angle3 = 270
-      		angle4 = 90
-      		angle5 = 0
-      		angle6 = 180
-      		angle7 = 0
-	    }
-    	if(this.choice === 3){
-		    speed1 = 7.5
-      		speed2 = 10
-      		speed3 = 2.5
-      		speed4 = 5      		
-      		angle = 0
-      		angle2 = 180
-      		angle3 = 90
-      		angle4 = 0
-      		angle5 = 180
-      		angle6 = 270
-      		angle7 = 90
-    	}
-   		if(this.choice === 4){
-		    speed1 = 10
-      		speed2 = 2.5
-      		speed3 = 5
-      		speed4 = 7.5
-      		angle = 180
-      		angle2 = 270
-      		angle3 = 180
-      		angle4 = 270
-      		angle5 = 90
-      		angle6 = 0
-      		angle7 = 270
-    	}
-		p1.setSpeed(speed1,angle)
-		p2.setSpeed(speed2,angle2)
-		p3.setSpeed(speed3,angle3)
-		e1.setSpeed(speed4,angle4)
-		e2.setSpeed(speed1,angle5)
-		e3.setSpeed(speed2,angle6)
-		e4.setSpeed(speed3,angle7)
-	}
+	// if (game === true) {
+	//     if(millis() > this.delay){
+ //        	this.choice = int(random(1,5))
+ //        	this.delay = millis() + 500
+ //    	}
+ //    	if(this.choice === 1){
+ //      		speed1 = 5
+ //      		speed2 = 2.5
+ //      		speed3 = 10
+ //      		speed4 = 7.5
+ //      		angle = 90
+ //      		angle2 = 0
+ //      		angle3 = 0
+ //      		angle4 = 180
+ //      		angle5 = 270
+ //      		angle6 = 90
+ //      		angle7 = 180
+ //    	}
+ //    	if(this.choice === 2){
+	// 	    speed1 = 2.5
+ //      		speed2 = 5
+ //      		speed3 = 7.5
+ //      		speed4 = 10 
+	// 	    angle = 270
+ //      		angle2 = 90
+ //      		angle3 = 270
+ //      		angle4 = 90
+ //      		angle5 = 0
+ //      		angle6 = 180
+ //      		angle7 = 0
+	//     }
+ //    	if(this.choice === 3){
+	// 	    speed1 = 7.5
+ //      		speed2 = 10
+ //      		speed3 = 2.5
+ //      		speed4 = 5      		
+ //      		angle = 0
+ //      		angle2 = 180
+ //      		angle3 = 90
+ //      		angle4 = 0
+ //      		angle5 = 180
+ //      		angle6 = 270
+ //      		angle7 = 90
+ //    	}
+ //   		if(this.choice === 4){
+	// 	    speed1 = 10
+ //      		speed2 = 2.5
+ //      		speed3 = 5
+ //      		speed4 = 7.5
+ //      		angle = 180
+ //      		angle2 = 270
+ //      		angle3 = 180
+ //      		angle4 = 270
+ //      		angle5 = 90
+ //      		angle6 = 0
+ //      		angle7 = 270
+ //    	}
+	// 	p1.setSpeed(speed1,angle)
+	// 	p2.setSpeed(speed2,angle2)
+	// 	p3.setSpeed(speed3,angle3)
+	// 	e1.setSpeed(speed4,angle4)
+	// 	e2.setSpeed(speed1,angle5)
+	// 	e3.setSpeed(speed2,angle6)
+	// 	e4.setSpeed(speed3,angle7)
+	// }
 }
 function boundary(){
 	if (player.collide(wall1)) {
