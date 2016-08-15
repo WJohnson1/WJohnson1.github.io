@@ -228,7 +228,9 @@ function draw(){
 		if(aa=== true){
 			player.overlap(ball,getBall)
 		}
-		player.overlap(ball2,getBall2)
+		if (aa === false && ab === true) {
+			player.overlap(ball2,getBall2)
+		}
 		player.overlap(ball3,getBall3)
 		player.overlap(ball4,getBall4)
 		player.overlap(ball5,getBall5)
