@@ -66,7 +66,7 @@ function setup(){
   	end.shapeColor = color(123,183,166)
     border = createSprite(32.5,350,70,700)
     border.shapeColor = color(123,183,166)
-    banner = createSprite(675,25,1350,50)
+    banner = createSprite(675,25,1350,65)
     banner.shapeColor = color(123,183,166)
     usa = createSprite(325,175,25,25)
     usa.addImage(loadImage("https://wjohnson1.github.io/Olympics/usa.png"))
@@ -254,7 +254,7 @@ function playerMovement(){
 }
 function dplayer(){
 if (player.collide(end)){
-    teamh.remove()
+    player.addImage(loadImage("https://WJohnson1.github.io/Olympics/Swimming/winner.png"))
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
