@@ -153,8 +153,7 @@ function draw(){
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/mexico.png"
-        }
-        console.log(yourteam)                                                                        
+        }                                                                        
     }
     if (homescreen === true && countrymenu  === false) {
 		usa.remove()
@@ -252,6 +251,7 @@ function playerMovement(){
 }
 function dplayer(){
 if (player.collide(end)){
+    team.remove()
     	d_player = end.position.x - player.position.x
     	d_opponent = end.position.x - opponent.position.x
     	d_opponent1 = end.position.x - opponent1.position.x
