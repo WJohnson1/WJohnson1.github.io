@@ -64,25 +64,35 @@ function setup(){
   	end = createSprite(1300,0,10, 1200)
   	end.shapeColor = color(255,0,0)
     usa = createSprite(325,175,25,25)
-    usa.addImage(loadImage("https://wjohnson1.github.io/Olympics/usa.png")) 
+    usa.addImage(loadImage("https://wjohnson1.github.io/Olympics/usa.png"))
+    usa.inputEnabled = true 
     russia = createSprite(650,175,25,25)
     russia.addImage(loadImage("https://wjohnson1.github.io/Olympics/russia.png"))
+    russia.inputEnabled = true
     brazil = createSprite(975,175,25,25)
     brazil.addImage(loadImage("https://wjohnson1.github.io/Olympics/brazil.png"))
+    brazil.inputEnabled = true
     china = createSprite(270,325,25,25)
     china.addImage(loadImage("https://wjohnson1.github.io/Olympics/china.png"))
+    china.inputEnabled = true
     australia = createSprite(540,325,25,25)
     australia.addImage(loadImage("https://wjohnson1.github.io/Olympics/australia.png"))
+    australia.inputEnabled = true
     france = createSprite(810,325,25,25)
     france.addImage(loadImage("https://wjohnson1.github.io/Olympics/france.png"))
+    france.inputEnabled = true
     germany = createSprite(1080,325,25,25)
     germany.addImage(loadImage("https://wjohnson1.github.io/Olympics/germany.png"))
+    germany.inputEnabled = true
     greatb = createSprite(325,500,25,25)
     greatb.addImage(loadImage("https://wjohnson1.github.io/Olympics/greatb.png"))
+    greatb.inputEnabled = true
     italy = createSprite(650,500,25,25)
     italy.addImage(loadImage("https://wjohnson1.github.io/Olympics/italy.png")) 
+    italy.inputEnabled = true
     mexico = createSprite(975,500,25,25)
     mexico.addImage(loadImage("https://wjohnson1.github.io/Olympics/mexico.png")) 
+    mexico.inputEnabled = true
 }
 function draw(){
 	if (countrymenu === true) {
