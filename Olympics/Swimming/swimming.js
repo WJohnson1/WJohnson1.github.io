@@ -116,6 +116,7 @@ function draw(){
         wall7.remove()
         wall8.remove()
         wall9.remove()
+        usa.events.onInputDown.add(bg, this)
     }
     if (homescreen === true && countrymenu  === false) {
 		background(123,183,166)
@@ -1612,3 +1613,6 @@ $(document).ready(function() {
     }, 3000);
  
 });
+function bg(){
+    background(0)
+}
