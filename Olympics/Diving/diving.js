@@ -333,7 +333,7 @@ function end(){
 	}	
 }
 function restart(){
-	if (game===false && homescreen===false) {
+	if (game===false && homescreen===false && countrymenu === false) {
 		fill(0)
 		textSize(50)
 		text("Do you want to play again?",400,280)
