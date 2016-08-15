@@ -231,9 +231,15 @@ function draw(){
 		if (aa === false && ab === true) {
 			player.overlap(ball2,getBall2)
 		}
-		player.overlap(ball3,getBall3)
-		player.overlap(ball4,getBall4)
-		player.overlap(ball5,getBall5)
+		if (aa === false && ab === false && ac === true) {
+			player.overlap(ball3,getBall3)
+		}
+		if (aa === false && ab === false && ac === false && ad === true) {
+			player.overlap(ball4,getBall4)
+		}
+		if (aa === false && ab === false && ac === false && ad === false) {
+			player.overlap(ball5,getBall5)
+		}
 		playerMovement()	
 		boundary()
 		computerMovement()
