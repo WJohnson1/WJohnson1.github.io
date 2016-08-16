@@ -1,4 +1,4 @@
-11111111111111111111111111111111111var angle
+var angle
 var game
 var computer
 var homescreen
