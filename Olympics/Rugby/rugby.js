@@ -318,14 +318,14 @@ function getBall5(){
 }
 function playerMovement(){
 	if (keyDown(65)) {
-		player.addImage(playerimg)
+		player.addImage(player2img)
 		player.setSpeed(speed,180)
 	}
 	if (keyDown(87)) {
 		player.setSpeed(speed,270)
 	}
 	if (keyDown(68)) {
-		player.addImage(player2img)
+		player.addImage(playerimg)
 		player.setSpeed(speed,0)
 	}
 	if (keyDown(83)) {
