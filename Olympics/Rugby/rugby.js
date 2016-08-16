@@ -40,7 +40,6 @@ function preload(){
 
 }
 function setup(){
-	countrymenu = false
 	homescreen = true
 	game = false
 	round1 = true
@@ -114,63 +113,6 @@ function setup(){
   	player.addImage(playerimg)
 }
 function draw(){
-	if (countrymenu === true) {
-        background(123,183,166)
-        drawSprites()
-        textSize(50)
-        text("Press the key under the country you want to play as",70,50)
-        textSize(25)
-        text("0",320,225)
-        text("1",645,225)
-        text("2",970,225)
-        text("3",265,375)
-        text("4",535,375)
-        text("5",805,375)
-        text("6",1075,375)
-        text("7",320,550)
-        text("8",645,550)
-        text("9",970,550)
-        if (keyDown(48)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(49)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(50)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(51)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(52)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(53)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(54)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(55)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(56)) {
-            countrymenu = false
-            homescreen = true
-        }
-        else if (keyDown(57)) {
-            countrymenu = false
-            homescreen = true
-        }                                                                        
-    }
 	if (homescreen === true) {
         banner.remove()
         border.remove()
@@ -189,7 +131,7 @@ function draw(){
 			game = true
 		}
 	}
-	if (game === true && homescreen === false && countrymenu === false){
+	if (game === true && homescreen === false){
 		background(0,255,0)
 		barrier1.shapeColor = color(0,255,0)
 	  	barrier2.shapeColor = color(0,255,0)
@@ -231,7 +173,7 @@ function draw(){
 		end()
 		drawSprites()
 	}
-	if (game === false && homescreen === false && countrymenu === false) {
+	if (game === false && homescreen === false) {
 		textSize(40)
 		if (win === true){
 			text("5",250,100)
@@ -263,7 +205,6 @@ function draw(){
 			team.remove()
 			usa.remove()
 			banner.remove()
-			countrymenu = false
 			game = true
 			draw()
 		}
