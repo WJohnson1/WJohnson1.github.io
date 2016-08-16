@@ -94,7 +94,7 @@ function draw(){
         end.shapeColor = color(255,0,0)
         fill(255,255,0)
 		textSize(50)
-        text("Your Lane",200,25)
+        text("Your Lane",200,50)
         playerMovement()
 		dplayer()
 		dopponent()
