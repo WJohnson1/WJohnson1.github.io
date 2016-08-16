@@ -84,52 +84,42 @@ function draw(){
         if (keyDown(48)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/usa.png"
         }
         if (keyDown(49)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/russia.png"
         }
         if (keyDown(50)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/brazil.png"
         }
         if (keyDown(51)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/china.png"
         }
         if (keyDown(52)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/australia.png"
         }
         if (keyDown(53)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/france.png"
         }
         if (keyDown(54)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/germany.png"
         }
         if (keyDown(55)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/greatb.png"
         }
         if (keyDown(56)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/italy.png"
         }
         if (keyDown(57)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/mexico.png"
         }                                                                        
     }
     if (homescreen === true) {
@@ -161,8 +151,6 @@ function draw(){
         end.shapeColor = color(255,0,0)
         fill(255,255,0)
 		textSize(50)
-        team = createSprite(260,40,25,25)
-        team.addImage(loadImage(yourteam))
         playerMovement()
 		dplayer()
 		dopponent()
@@ -174,7 +162,7 @@ function draw(){
 		dopponent6()
         drawSprites()                                                    
 	} 
-	if (game === false && homescreen === false){
+	if (game === false && homescreen === false && countrymenu === false){
 		textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
