@@ -20,7 +20,7 @@ var brazil
 var greatb
 var usa_url =  "https://wjohnson1.github.io/Olympics/usa.png"
 function preLoad(){
-	usa = loadImage(usa_url)
+	usap = loadImage(usa_url)
 }
 function setup(){
 	countrymenu = true
@@ -100,7 +100,7 @@ function setup(){
   	border = createSprite(1250,350,50,700)
   	border.shapeColor= color(123,183,166)
   	usa = createSprite(325,175,25,25)
-    usa.addImage(usa)
+    usa.addImage(usap)
     russia = createSprite(650,175,25,25)
     russia.addImage(loadImage("https://wjohnson1.github.io/Olympics/russia.png"))
     brazil = createSprite(975,175,25,25)
