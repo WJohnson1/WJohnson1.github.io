@@ -17,8 +17,8 @@ function setup(){
 	x = 0
 	game = false
 	movement = true
-    countrymenu = true
-	homescreen = false
+    countrymenu = false
+	homescreen = true
 	createCanvas(1350,590)
   	player = createSprite(25,35,25,25)
   	player.shapeColor= color(123,183,166)
@@ -90,73 +90,6 @@ function setup(){
     mexico.addImage(loadImage("https://wjohnson1.github.io/Olympics/mexico.png")) 
 }
 function draw(){
-	if (countrymenu === true) {
-        background(123,183,166)
-        drawSprites()
-        textSize(50)
-        text("Press the key under the country you want to play as",70,50)
-        textSize(25)
-        text("0",320,225)
-        text("1",645,225)
-        text("2",970,225)
-        text("3",265,375)
-        text("4",535,375)
-        text("5",805,375)
-        text("6",1075,375)
-        text("7",320,550)
-        text("8",645,550)
-        text("9",970,550)
-        if (keyDown(48)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/usa.png"
-        }
-        if (keyDown(49)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/russia.png"
-        }
-        if (keyDown(50)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/brazil.png"
-        }
-        if (keyDown(51)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/china.png"
-        }
-        if (keyDown(52)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/australia.png"
-        }
-        if (keyDown(53)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/france.png"
-        }
-        if (keyDown(54)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/germany.png"
-        }
-        if (keyDown(55)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/greatb.png"
-        }
-        if (keyDown(56)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/italy.png"
-        }
-        if (keyDown(57)) {
-            countrymenu = false
-            homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/mexico.png"
-        }                                                                        
-    }
     if (homescreen === true) {
         background(123,183,166)
 		textSize(50)
