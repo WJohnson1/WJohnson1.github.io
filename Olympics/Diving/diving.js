@@ -345,6 +345,17 @@ function restart(){
 			target.remove()
 			setup()
 			countrymenu = false
+			usa.remove()
+    	    russia.remove()
+	        brazil.remove()
+   	    	china.remove()
+        	australia.remove()
+        	france.remove()
+        	germany.remove()
+        	greatb.remove()
+        	italy.remove()
+        	mexico.remove()	
+			bg.remove()
 			game = true
 			draw()
 		}
