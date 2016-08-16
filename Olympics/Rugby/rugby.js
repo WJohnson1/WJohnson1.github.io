@@ -150,52 +150,42 @@ function draw(){
         if (keyDown(48)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/usa.png"
         }
         else if (keyDown(49)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/russia.png"
         }
         else if (keyDown(50)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/brazil.png"
         }
         else if (keyDown(51)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/china.png"
         }
         else if (keyDown(52)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/australia.png"
         }
         else if (keyDown(53)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/france.png"
         }
         else if (keyDown(54)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/germany.png"
         }
         else if (keyDown(55)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/greatb.png"
         }
         else if (keyDown(56)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/italy.png"
         }
         else if (keyDown(57)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/mexico.png"
         }                                                                        
     }
 	if (homescreen === true) {
@@ -236,7 +226,7 @@ function draw(){
 		textSize(40)
 		text(score, 250,100)
 	    team = createSprite(310,310,25,25)
-        team.addImage(loadImage(yourteam))	
+        team.addImage(usaimg)	
 		text("Get to the End Zone with the ball", 50,200)
 		textSize(25)	
 		text("Without the Defenders Getting You", 125,275)
