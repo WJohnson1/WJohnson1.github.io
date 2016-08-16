@@ -11,14 +11,13 @@ var d_opponent6
 var homescreen
 var game
 var movement
-var countrymenu
+var homescreen
 var yourteam
 function setup(){
 	x = 0
 	game = false
 	movement = true
-    countrymenu = true
-	homescreen = false
+    homescreen = true
 	createCanvas(1350,590)
   	player = createSprite(25,35,25,25)
   	player.shapeColor= color(123,183,166)
@@ -66,7 +65,7 @@ function setup(){
   	end.shapeColor = color(123,183,166)
   }
 function draw(){
-	if (countrymenu === true) {
+	if (homescreen === true) {
         background(123,183,166)
         textSize(50)
         fill(255,255,255)
@@ -77,11 +76,11 @@ function draw(){
         textSize(50)
         text("Press Enter to Start",425,450)
         if (keyCode === ENTER){
-            countrymenu = false
+            homescreen = false
             game = true
         }    
     }
-	if (countrymenu === false && game === true) {
+	if (homescreen === false && game === true) {
 		background(0,0,255)
         wall1.shapeColor = color(255,0,0)
         wall2.shapeColor = color(255,0,0)
@@ -107,14 +106,14 @@ function draw(){
 		dopponent6()
         drawSprites()                                                    
 	} 
-	if (game === false && homescreen === false && countrymenu === false){
+	if (game === false && homescreen === false){
 		textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
 		text("Press Enter to Start a New Game",360,350)
 		if (keyCode === ENTER) {
             setup()
-            countrymenu = false
+            homescreen = false
             homescreen = false
             game = true
             draw()
