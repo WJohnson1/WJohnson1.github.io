@@ -11,12 +11,14 @@ var d_opponent6
 var homescreen
 var game
 var movement
+var countrymenu
 var yourteam
 function setup(){
 	x = 0
 	game = false
 	movement = true
-	homescreen = true
+    countrymenu = true
+	homescreen = false
 	createCanvas(1350,590)
   	player = createSprite(25,35,25,25)
   	player.shapeColor= color(123,183,166)
@@ -62,9 +64,112 @@ function setup(){
   	wall9.shapeColor = color(123,183,166)
   	end = createSprite(1300,0,10, 1200)
   	end.shapeColor = color(123,183,166)
+    border = createSprite(32.5,350,70,700)
+    border.shapeColor = color(123,183,166)
+    banner = createSprite(675,25,1350,65)
+    banner.shapeColor = color(123,183,166)
+    usa = createSprite(325,175,25,25)
+    usa.addImage(loadImage("https://wjohnson1.github.io/Olympics/usa.png"))
+    russia = createSprite(650,175,25,25)
+    russia.addImage(loadImage("https://wjohnson1.github.io/Olympics/russia.png"))
+    brazil = createSprite(975,175,25,25)
+    brazil.addImage(loadImage("https://wjohnson1.github.io/Olympics/brazil.png"))
+    china = createSprite(270,325,25,25)
+    china.addImage(loadImage("https://wjohnson1.github.io/Olympics/china.png"))
+    australia = createSprite(540,325,25,25)
+    australia.addImage(loadImage("https://wjohnson1.github.io/Olympics/australia.png"))
+    france = createSprite(810,325,25,25)
+    france.addImage(loadImage("https://wjohnson1.github.io/Olympics/france.png"))
+    germany = createSprite(1080,325,25,25)
+    germany.addImage(loadImage("https://wjohnson1.github.io/Olympics/germany.png"))
+    greatb = createSprite(325,500,25,25)
+    greatb.addImage(loadImage("https://wjohnson1.github.io/Olympics/greatb.png"))
+    italy = createSprite(650,500,25,25)
+    italy.addImage(loadImage("https://wjohnson1.github.io/Olympics/italy.png")) 
+    mexico = createSprite(975,500,25,25)
+    mexico.addImage(loadImage("https://wjohnson1.github.io/Olympics/mexico.png")) 
 }
 function draw(){
-    if (homescreen === true) {
+	if (countrymenu === true) {
+        background(123,183,166)
+        drawSprites()
+        textSize(50)
+        text("Press the key under the country you want to play as",70,50)
+        textSize(25)
+        text("0",320,225)
+        text("1",645,225)
+        text("2",970,225)
+        text("3",265,375)
+        text("4",535,375)
+        text("5",805,375)
+        text("6",1075,375)
+        text("7",320,550)
+        text("8",645,550)
+        text("9",970,550)
+        if (keyDown(48)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/usa.png"
+        }
+        if (keyDown(49)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/russia.png"
+        }
+        if (keyDown(50)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/brazil.png"
+        }
+        if (keyDown(51)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/china.png"
+        }
+        if (keyDown(52)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/australia.png"
+        }
+        if (keyDown(53)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/france.png"
+        }
+        if (keyDown(54)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/germany.png"
+        }
+        if (keyDown(55)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/greatb.png"
+        }
+        if (keyDown(56)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/italy.png"
+        }
+        if (keyDown(57)) {
+            countrymenu = false
+            homescreen = true
+            yourteam = "https://wjohnson1.github.io/Olympics/mexico.png"
+        }                                                                        
+    }
+    if (homescreen === true && countrymenu  === false) {
+		usa.remove()
+        russia.remove()
+        brazil.remove()
+        china.remove()
+        australia.remove()
+        france.remove()
+        germany.remove()
+        greatb.remove()
+        italy.remove()
+        mexico.remove()
+        border.remove()
+        banner.remove()
         background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
@@ -79,7 +184,7 @@ function draw(){
 			game = true
 		}
 	}
-	if (homescreen === false && game === true) {
+	if (homescreen === false && game === true && countrymenu === false) {
 		background(0,0,255)
         wall1.shapeColor = color(255,0,0)
         wall2.shapeColor = color(255,0,0)
@@ -106,7 +211,7 @@ function draw(){
 		dopponent6()
         drawSprites()                                                    
 	} 
-	if (game === false && homescreen === false) {
+	if (game === false && homescreen === false && countrymenu === false) {
 		textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
