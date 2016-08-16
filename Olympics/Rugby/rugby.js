@@ -20,8 +20,23 @@ var brazil
 var greatb
 var usa_url = 'https://wjohnson1.github.io/Olympics/usa.png';
 var usap;
+var ball_url = "https://WJohnson1.github.io/Olympics/Rugby/ball.png"
+var ballimg;
+var eimg;
+var playerimg;
+var russiaimg;
+var brazilimg;
+var chinaimg;
+var greatbimg;
 function preload(){
 	usap = loadImage(usa_url)
+	ballimg = loadImage(ball_url)
+	eimg = loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png");
+	playerimg = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player1.png");
+	russiaimg = loadImage("https://wjohnson1.github.io/Olympics/russia.png");
+	brazilimg = loadImage("https://wjohnson1.github.io/Olympics/brazil.png");
+	chinaimg = loadImage("https://wjohnson1.github.io/Olympics/china.png");
+	greatbimg = loadImage("https://wjohnson1.github.io/Olympics/greatb.png");
 }
 function setup(){
 	countrymenu = true
@@ -39,49 +54,49 @@ function setup(){
 	createCanvas(1350,600)
 	background(0,255,0)
   	ball = createSprite(350,75,10,10)
-  	ball.shapeColor = color(102,51,0)
-	ball.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/ball.png")) 
+  	//ball.shapeColor = color(102,51,0)
+	ball.addImage(ballimg) 
 	ball2 = createSprite(350,575,10,10)
-  	ball2.shapeColor = color(102,51,0)
-	ball2.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/ball.png"))   	
+  	//ball2.shapeColor = color(102,51,0)
+	ball2.addImage(ballimg)   	
   	barrier1 = createSprite(350,570,50,50)
   	barrier1.shapeColor = color(123,183,166)
 	ball3 = createSprite(150,500,10,10)
-  	ball3.shapeColor = color(102,51,0)
-  	ball3.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/ball.png")) 
+  	// ball3.shapeColor = color(102,51,0)
+  	ball3.addImage(ballimg) 
   	barrier2 = createSprite(150,500,50,50)
   	barrier2.shapeColor = color(123,183,166)
 	ball4 = createSprite(150,300,10,10)
-  	ball4.shapeColor = color(102,51,0)
-  	ball4.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/ball.png")) 
+  	// ball4.shapeColor = color(102,51,0)
+  	ball4.addImage(ballimg) 
   	barrier3 = createSprite(150,300,50,50)
   	barrier3.shapeColor = color(123,183,166)
 	ball5 = createSprite(50,25,10,10)
-  	ball5.shapeColor = color(102,51,0)
-  	ball5.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/ball.png")) 
+  	//ball5.shapeColor = color(102,51,0)
+  	ball5.addImage(ballimg) 
   	barrier4 = createSprite(50,25,50,50)
   	barrier4.shapeColor = color(123,183,166)  	  		
 	p1 = createSprite(1250,150,25,25)
   	p1.shapeColor= color(255,0,0)
-  	p1.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png"))
+  	p1.addImage(eimg)
 	p2 = createSprite(1250,300,25,25)
   	p2.shapeColor= color(255,0,0)
-  	p2.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png"))
+  	p2.addImage(eimg)
 	p3 = createSprite(1250,450,25,25)
   	p3.shapeColor= color(255,0,0)
-  	p3.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png"))
+  	p3.addImage(eimg)
 	e1 = createSprite(1250,75,25,25)
   	e1.shapeColor= color(255,0,0)
-  	e1.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png"))
+  	e1.addImage(eimg)
 	e2 = createSprite(1250,225,25,25)
   	e2.shapeColor= color(255,0,0)
-  	e2.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png")) 
+  	e2.addImage(eimg) 
 	e3 = createSprite(1250,375,25,25)
   	e3.shapeColor= color(255,0,0)
-  	e3.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png")) 
+  	e3.addImage(eimg) 
 	e4 = createSprite(1250,525,25,25)
   	e4.shapeColor= color(255,0,0)
-  	e4.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png")) 
+  	e4.addImage(eimg) 
 	goal2 = createSprite(1320,300,50,600)
   	goal2.shapeColor= color(123,183,166)  	
   	halfpoint = createSprite(675,300,35,600)
@@ -95,7 +110,7 @@ function setup(){
 	wall4 = createSprite(675,600,1350,25)
   	wall4.shapeColor= color(123,183,166)
   	player = createSprite(300,75,25,25)
-  	player.addImage(loadImage("https://WJohnson1.github.io/Olympics/Rugby/player1.png"))
+  	player.addImage(playerimg)
   	banner = createSprite(310,75,100,50)
   	banner.shapeColor= color(123,183,166)
   	border = createSprite(1250,350,50,700)
@@ -103,13 +118,13 @@ function setup(){
   	usa = createSprite(325,175,25,25)
     usa.addImage(usap)
     russia = createSprite(650,175,25,25)
-    russia.addImage(loadImage("https://wjohnson1.github.io/Olympics/russia.png"))
+    russia.addImage(russiaimg)
     brazil = createSprite(975,175,25,25)
-    brazil.addImage(loadImage("https://wjohnson1.github.io/Olympics/brazil.png"))
+    brazil.addImage(brazilimg)
     china = createSprite(270,325,25,25)
-    china.addImage(loadImage("https://wjohnson1.github.io/Olympics/china.png"))
+    china.addImage(chinaimg)
     greatb = createSprite(325,500,25,25)
-    greatb.addImage(loadImage("https://wjohnson1.github.io/Olympics/greatb.png"))
+    greatb.addImage(greatbimg)
 }
 function draw(){
 	if (countrymenu === true) {
