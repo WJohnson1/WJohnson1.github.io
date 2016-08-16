@@ -126,7 +126,7 @@ function draw(){
         if (keyDown(49)) {
             countrymenu = false
             homescreen = true
-            yourteam = "https://wjohnson1.github.io/Olympics/russia.png"
+            yourteam = "https://www.enchantedlearning.com/asia/russia/flag/Flagbig.GIF"
         }
         if (keyDown(50)) {
             countrymenu = false
