@@ -152,47 +152,47 @@ function draw(){
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/usa.png"
         }
-        if (keyDown(49)) {
+        else if (keyDown(49)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/russia.png"
         }
-        if (keyDown(50)) {
+        else if (keyDown(50)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/brazil.png"
         }
-        if (keyDown(51)) {
+        else if (keyDown(51)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/china.png"
         }
-        if (keyDown(52)) {
+        else if (keyDown(52)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/australia.png"
         }
-        if (keyDown(53)) {
+        else if (keyDown(53)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/france.png"
         }
-        if (keyDown(54)) {
+        else if (keyDown(54)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/germany.png"
         }
-        if (keyDown(55)) {
+        else if (keyDown(55)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/greatb.png"
         }
-        if (keyDown(56)) {
+        else if (keyDown(56)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/italy.png"
         }
-        if (keyDown(57)) {
+        else if (keyDown(57)) {
             countrymenu = false
             homescreen = true
             yourteam = "https://wjohnson1.github.io/Olympics/mexico.png"
@@ -243,16 +243,16 @@ function draw(){
 		if(aa=== true){
 			player.overlap(ball,getBall)
 		}
-		if (aa === false && ab === true) {
+		else if (aa === false && ab === true) {
 			player.overlap(ball2,getBall2)
 		}
-		if (aa === false && ab === false && ac === true) {
+		else if (aa === false && ab === false && ac === true) {
 			player.overlap(ball3,getBall3)
 		}
-		if (aa === false && ab === false && ac === false && ad === true) {
+		else if (aa === false && ab === false && ac === false && ad === true) {
 			player.overlap(ball4,getBall4)
 		}
-		if (aa === false && ab === false && ac === false && ad === false) {
+		else if (aa === false && ab === false && ac === false && ad === false) {
 			player.overlap(ball5,getBall5)
 		}
 		playerMovement()	
@@ -268,7 +268,7 @@ function draw(){
 		if (win === true){
 			text("5",250,100)
 		}
-		if (win === false) {
+		else if (win === false) {
 			text(score,250,100)
 		}
 		textSize(50)
@@ -330,14 +330,14 @@ function playerMovement(){
 		player.addImage(player2img)
 		player.setSpeed(speed,180)
 	}
-	if (keyDown(87)) {
+	else if (keyDown(87)) {
 		player.setSpeed(speed,270)
 	}
-	if (keyDown(68)) {
+	else if (keyDown(68)) {
 		player.addImage(playerimg)
 		player.setSpeed(speed,0)
 	}
-	if (keyDown(83)) {
+	else if (keyDown(83)) {
 		player.setSpeed(speed,90)
 	}
 }
