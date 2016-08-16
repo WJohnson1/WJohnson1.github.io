@@ -169,6 +169,9 @@ function draw(){
 		text("Press Enter to Start a New Game",360,350)
 		if (keyCode === ENTER) {
             setup()
+            countrymenu = false
+            homescreen = false
+            game = true
             draw()
 		}
 	}
