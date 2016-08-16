@@ -117,32 +117,32 @@ function draw(){
 }	
 function playerMovement(){
 	if (movement === true ){ 
-	if (keyDown(32)){
-		player.setSpeed(x+1,0)
-		x = x + .1	
-	}
-	if (keyDown(32)){
-		opponent.setSpeed(random(3,6),0)
+	   if (keyDown(32)){
+    		player.setSpeed(x+1,0)
+    		x = x + .1	
+    	}
+	   if (keyDown(32)){
+	      	opponent.setSpeed(random(3,6),0)
+        }
+        if (keyDown(32)){
+     	  opponent1.setSpeed(random(3,6),0)
+        }
+        if (keyDown(32)){
+            opponent2.setSpeed(random(3,6),0)
+        }
+        if (keyDown(32)){
+            opponent3.setSpeed(random(3,6),0)
+        }
+        if (keyDown(32)){
+            opponent4.setSpeed(random(3,6),0)
+        }
+        if (keyDown(32)){
+            opponent5.setSpeed(random(3,6),0)
+        }
+        if (keyDown(32)){
+            opponent6.setSpeed(random(3,6),0)
+        }
     }
-    if (keyDown(32)){
- 	opponent1.setSpeed(random(3,6),0)
-    }
-    if (keyDown(32)){
- 	opponent2.setSpeed(random(3,6),0)
-    }
-    if (keyDown(32)){
- 	opponent3.setSpeed(random(3,6),0)
-    }
-    if (keyDown(32)){
- 	opponent4.setSpeed(random(3,6),0)
-    }
-    if (keyDown(32)){
- 	opponent5.setSpeed(random(3,6),0)
-    }
-	if (keyDown(32)){
-		opponent6.setSpeed(random(3,6),0)
-    }
-}
 }
 function dplayer(){
 if (player.collide(end)){
@@ -1566,6 +1566,5 @@ $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
         $('h1').css('color','#222222');
-    }, 3000);
- 
+    }, 3000); 
 });
