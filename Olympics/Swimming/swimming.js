@@ -198,8 +198,6 @@ function draw(){
         end.shapeColor = color(255,0,0)
         fill(255,255,0)
 		textSize(50)
-        team = createSprite(260,40,25,25)
-        team.addImage(loadImage(yourteam))
         playerMovement()
 		dplayer()
 		dopponent()
@@ -218,6 +216,9 @@ function draw(){
 		text("Press Enter to Start a New Game",360,350)
 		if (keyCode === ENTER) {
             setup()
+            countrymenu = false
+            game = true
+            draw()
 		}
 	}
 }	

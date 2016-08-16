@@ -277,6 +277,8 @@ function draw(){
 			e3.remove()
 			e4.remove()
 			setup()
+			countrymenu = false
+			game = true
 			draw()
 		}
 	}
