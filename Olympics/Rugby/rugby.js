@@ -18,10 +18,7 @@ var russia
 var china
 var brazil
 var greatb
-var usa_url =  "https://wjohnson1.github.io/Olympics/usa.png"
-function preLoad(){
-	usap = loadImage(usa_url)
-}
+var usa_url = 'https://wjohnson1.github.io/Olympics/usa.png'
 function setup(){
 	countrymenu = true
 	homescreen = false
@@ -574,6 +571,9 @@ function youWin(){
   	e.shapeColor = color(0,255,0)
 
 	text("You Win", 200,390)
+}
+function preLoad(){
+	usap = loadImage(usa_url)
 }
 $('body').toggleClass('loaded');
 $(document).ready(function() {
