@@ -316,6 +316,7 @@ function getBall5(){
 	ball5.remove()
 	round5 = true
 }
+
 function playerMovement(){
 	if (keyDown(65)) {
 		player.addImage(player2img)
