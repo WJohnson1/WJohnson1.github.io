@@ -344,6 +344,8 @@ function restart(){
 			player.remove()
 			target.remove()
 			setup()
+			countrymenu = false
+			game = true
 			draw()
 		}
 	}
