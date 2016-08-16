@@ -344,8 +344,7 @@ function restart(){
 			player.remove()
 			target.remove()
 			setup()
-			homescreen = false
-			game = true
+			draw()
 		}
 	}
 }
