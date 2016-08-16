@@ -199,7 +199,7 @@ function draw(){
 		dopponent6()
         drawSprites()                                                    
 	} 
-	if (game === false && homescreen === false{
+	if (game === false && homescreen === false){
 		textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
