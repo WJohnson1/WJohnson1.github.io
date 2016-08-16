@@ -114,8 +114,6 @@ function setup(){
 }
 function draw(){
 	if (homescreen === true) {
-        banner.remove()
-        border.remove()
 		background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
@@ -201,10 +199,8 @@ function draw(){
 			e3.remove()
 			e4.remove()
 			setup()
-			border.remove()
 			team.remove()
 			usa.remove()
-			banner.remove()
 			game = true
 			draw()
 		}
