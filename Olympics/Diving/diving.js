@@ -170,6 +170,8 @@ function draw(){
         	player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer3.png"))
         }	
 		jump()	
+		team = createSprite(400,50,25,25)
+		team.addImage(loadImage(yourteam))		
 		drawSprites()
 		textSize(25)
 		text("Press J to Start",25,50)
