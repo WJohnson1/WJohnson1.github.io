@@ -13,13 +13,6 @@ var ac = true
 var ab = true
 var aa = true
 var win = false
-var usa
-var russia
-var china
-var brazil
-var greatb
-var usa_url = 'https://wjohnson1.github.io/Olympics/usa.png';
-var usaimg;
 var ball_url = "https://WJohnson1.github.io/Olympics/Rugby/ball.png"
 var ballimg;
 var eimg;
@@ -31,7 +24,6 @@ var brazilimg;
 var chinaimg;
 var greatbimg;
 function preload(){
-	usaimg = loadImage(usa_url)
 	ballimg = loadImage(ball_url)
 	eimg = loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png");
 	playerimg = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player.png");
@@ -143,8 +135,6 @@ function draw(){
   	  	wall4.shapeColor= color(255,255,255)	  		
 		textSize(40)
 		text(score, 250,100)
-	    team = createSprite(310,310,25,25)
-        team.addImage(usaimg)	
 		text("Get to the End Zone with the ball", 50,200)
 		textSize(25)	
 		text("Without the Defenders Getting You", 125,275)
@@ -199,8 +189,6 @@ function draw(){
 			e3.remove()
 			e4.remove()
 			setup()
-			team.remove()
-			usa.remove()
 			game = true
 			draw()
 		}
