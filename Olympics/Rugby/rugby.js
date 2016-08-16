@@ -37,14 +37,11 @@ function preload(){
 	playerimg = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player.png");
 	player1img = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player1.png");
 	player2img = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player2.png");
-	russiaimg = loadImage("https://wjohnson1.github.io/Olympics/russia.png");
-	brazilimg = loadImage("https://wjohnson1.github.io/Olympics/brazil.png");
-	chinaimg = loadImage("https://wjohnson1.github.io/Olympics/china.png");
-	greatbimg = loadImage("https://wjohnson1.github.io/Olympics/greatb.png");
+
 }
 function setup(){
-	countrymenu = true
-	homescreen = false
+	countrymenu = false
+	homescreen = true
 	game = false
 	round1 = true
 	round2 = false
@@ -115,20 +112,6 @@ function setup(){
   	wall4.shapeColor= color(123,183,166)
   	player = createSprite(300,75,25,25)
   	player.addImage(playerimg)
-  	banner = createSprite(310,75,100,50)
-  	banner.shapeColor= color(123,183,166)
-  	border = createSprite(1250,350,50,700)
-  	border.shapeColor= color(123,183,166)
-  	usa = createSprite(325,175,25,25)
-    usa.addImage(usaimg)
-    russia = createSprite(650,175,25,25)
-    russia.addImage(russiaimg)
-    brazil = createSprite(975,175,25,25)
-    brazil.addImage(brazilimg)
-    china = createSprite(270,325,25,25)
-    china.addImage(chinaimg)
-    greatb = createSprite(325,500,25,25)
-    greatb.addImage(greatbimg)
 }
 function draw(){
 	if (countrymenu === true) {
@@ -189,11 +172,6 @@ function draw(){
         }                                                                        
     }
 	if (homescreen === true) {
-		usa.remove()
-        russia.remove()
-        brazil.remove()
-        china.remove()
-        greatb.remove()
         banner.remove()
         border.remove()
 		background(123,183,166)
@@ -284,10 +262,6 @@ function draw(){
 			border.remove()
 			team.remove()
 			usa.remove()
-			russia.remove()
-			greatb.remove()
-			china.remove()
-			brazil.remove()
 			banner.remove()
 			countrymenu = false
 			game = true
@@ -601,5 +575,4 @@ $(document).ready(function() {
         $('body').addClass('loaded');
         $('h1').css('color','#222222');
     }, 3000);
- 
 });
