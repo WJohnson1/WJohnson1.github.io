@@ -76,18 +76,8 @@ function setup(){
     brazil.addImage(loadImage("https://wjohnson1.github.io/Olympics/brazil.png"))
     china = createSprite(270,325,25,25)
     china.addImage(loadImage("https://wjohnson1.github.io/Olympics/china.png"))
-    australia = createSprite(540,325,25,25)
-    australia.addImage(loadImage("https://wjohnson1.github.io/Olympics/australia.png"))
-    france = createSprite(810,325,25,25)
-    france.addImage(loadImage("https://wjohnson1.github.io/Olympics/france.png"))
-    germany = createSprite(1080,325,25,25)
-    germany.addImage(loadImage("https://wjohnson1.github.io/Olympics/germany.png"))
     greatb = createSprite(325,500,25,25)
     greatb.addImage(loadImage("https://wjohnson1.github.io/Olympics/greatb.png"))
-    italy = createSprite(650,500,25,25)
-    italy.addImage(loadImage("https://wjohnson1.github.io/Olympics/italy.png")) 
-    mexico = createSprite(975,500,25,25)
-    mexico.addImage(loadImage("https://wjohnson1.github.io/Olympics/mexico.png")) 
 }
 function draw(){
 	if (countrymenu === true) {
@@ -162,12 +152,7 @@ function draw(){
         russia.remove()
         brazil.remove()
         china.remove()
-        australia.remove()
-        france.remove()
-        germany.remove()
         greatb.remove()
-        italy.remove()
-        mexico.remove()
         border.remove()
         banner.remove()
         background(123,183,166)
@@ -210,10 +195,11 @@ function draw(){
         drawSprites()                                                    
 	} 
 	if (game === false && homescreen === false && countrymenu === false) {
-		textSize(50)
+		fill(255)
+        textSize(50)
 		text("Do you want to play again?",300,280)
 		textSize(25)
-		text("Press Enter to Start a New Game",360,350)
+		text("Press Enter to Start a New Game",370,350)
 		if (keyCode === ENTER) {
             setup()
             countrymenu = false
