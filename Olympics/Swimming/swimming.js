@@ -68,27 +68,20 @@ function setup(){
 function draw(){
 	if (countrymenu === true) {
         background(123,183,166)
-        if (keyDown(48)) {
+        textSize(50)
+        fill(255,255,255)
+        text("Are You Ready to Face the Best Swimmers in the World", 75,100)
+        text("Press Spacebar to move",375,250)
+        textSize(25)
+        text("(the faster you press it the faster you go)",425,275)
+        textSize(50)
+        text("Press Enter to Start",425,450)
+        if (keyCode === ENTER){
             countrymenu = false
-            homescreen = true
-        }                                                       
+            game = true
+        }    
     }
-    if (homescreen === true) {
-        background(123,183,166)
-		textSize(50)
-		fill(255,255,255)
-		text("Are You Ready to Face the Best Swimmers in the World", 75,100)
-		text("Press Spacebar to move",375,250)
-		textSize(25)
-		text("(the faster you press it the faster you go)",425,275)
-		textSize(50)
-		text("Press Enter to Start",425,450)
-		if (keyCode === ENTER){
-			homescreen = false
-			game = true
-		}
-	}
-	if (homescreen === false && game === true) {
+	if (countrymenu === false && game === true) {
 		background(0,0,255)
         wall1.shapeColor = color(255,0,0)
         wall2.shapeColor = color(255,0,0)
@@ -102,6 +95,7 @@ function draw(){
         end.shapeColor = color(255,0,0)
         fill(255,255,0)
 		textSize(50)
+        text("Your Lane",200,25)
         playerMovement()
 		dplayer()
 		dopponent()
