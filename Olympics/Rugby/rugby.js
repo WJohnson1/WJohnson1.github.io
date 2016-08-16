@@ -13,6 +13,14 @@ var ac = true
 var ab = true
 var aa = true
 var win = false
+var usa
+var russia
+var china
+var brazil
+var greatb 
+function preLoad(){
+	usa = loadImage("https://wjohnson1.github.io/Olympics/usa.png")
+}
 function setup(){
 	countrymenu = true
 	homescreen = false
@@ -91,7 +99,7 @@ function setup(){
   	border = createSprite(1250,350,50,700)
   	border.shapeColor= color(123,183,166)
   	usa = createSprite(325,175,25,25)
-    usa.addImage(loadImage("https://wjohnson1.github.io/Olympics/usa.png"))
+    usa.addImage(usa)
     russia = createSprite(650,175,25,25)
     russia.addImage(loadImage("https://wjohnson1.github.io/Olympics/russia.png"))
     brazil = createSprite(975,175,25,25)
