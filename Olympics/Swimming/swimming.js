@@ -17,8 +17,8 @@ function setup(){
 	x = 0
 	game = false
 	movement = true
-    countrymenu = false
-	homescreen = true
+    countrymenu = true
+	homescreen = false
 	createCanvas(1350,590)
   	player = createSprite(25,35,25,25)
   	player.shapeColor= color(123,183,166)
