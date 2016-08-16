@@ -19,20 +19,24 @@ var china
 var brazil
 var greatb
 var usa_url = 'https://wjohnson1.github.io/Olympics/usa.png';
-var usap;
+var usaimg;
 var ball_url = "https://WJohnson1.github.io/Olympics/Rugby/ball.png"
 var ballimg;
 var eimg;
 var playerimg;
+var player1img;
+var player2img
 var russiaimg;
 var brazilimg;
 var chinaimg;
 var greatbimg;
 function preload(){
-	usap = loadImage(usa_url)
+	usaimg = loadImage(usa_url)
 	ballimg = loadImage(ball_url)
 	eimg = loadImage("https://WJohnson1.github.io/Olympics/Rugby/e.png");
-	playerimg = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player1.png");
+	playerimg = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player.png");
+	player1img = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player1.png");
+	player2img = loadImage("https://WJohnson1.github.io/Olympics/Rugby/player2.png");
 	russiaimg = loadImage("https://wjohnson1.github.io/Olympics/russia.png");
 	brazilimg = loadImage("https://wjohnson1.github.io/Olympics/brazil.png");
 	chinaimg = loadImage("https://wjohnson1.github.io/Olympics/china.png");
@@ -116,7 +120,7 @@ function setup(){
   	border = createSprite(1250,350,50,700)
   	border.shapeColor= color(123,183,166)
   	usa = createSprite(325,175,25,25)
-    usa.addImage(usap)
+    usa.addImage(usaimg)
     russia = createSprite(650,175,25,25)
     russia.addImage(russiaimg)
     brazil = createSprite(975,175,25,25)
@@ -314,14 +318,14 @@ function getBall5(){
 }
 function playerMovement(){
 	if (keyDown(65)) {
-		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Rugby/player2.png"))
+		player.addImage(playerimg)
 		player.setSpeed(speed,180)
 	}
 	if (keyDown(87)) {
 		player.setSpeed(speed,270)
 	}
 	if (keyDown(68)) {
-		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Rugby/player.png"))
+		player.addImage(player2img)
 		player.setSpeed(speed,0)
 	}
 	if (keyDown(83)) {
