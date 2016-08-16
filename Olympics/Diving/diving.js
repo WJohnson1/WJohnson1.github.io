@@ -38,7 +38,7 @@ function setup(){
 	target = createSprite(random(200,1200),500,100,35)
 	target.shapeColor = color(255,255,0)
 	target.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/target.png")) 
-	player = createSprite(25,250,25,25)
+	player = createSprite(25,250,50,25)
 	player.shapeColor = color(255,0,255)
 	player.velocity.y = 0
 	player.velocity.x = 0
