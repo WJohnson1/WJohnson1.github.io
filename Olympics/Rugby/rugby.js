@@ -1,4 +1,4 @@
-var angle
+11111111111111111111111111111111111var angle
 var game
 var computer
 var homescreen
@@ -17,9 +17,10 @@ var usa
 var russia
 var china
 var brazil
-var greatb 
+var greatb
+var usa_url =  "https://wjohnson1.github.io/Olympics/usa.png"
 function preLoad(){
-	usa = loadImage("https://wjohnson1.github.io/Olympics/usa.png")
+	usa = loadImage(usa_url)
 }
 function setup(){
 	countrymenu = true
