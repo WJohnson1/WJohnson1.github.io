@@ -175,18 +175,6 @@ function draw(){
 			if (win === true){
 				e.remove()
 			}
-			// barrier1.remove()
-			// barrier2.remove()
-			// barrier3.remove()
-			// barrier4.remove()
-			// halfpoint.remove()	
-			// p1.remove()
-			// p2.remove()
-			// p3.remove()
-			// e1.remove()
-			// e2.remove()
-			// e3.remove()
-			// e4.remove()
 			location.reload();
 		}
 	}
@@ -496,5 +484,5 @@ $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
         $('h1').css('color','#222222');
-    }, 3000);
+    }, 1000);
 });
