@@ -194,9 +194,8 @@ function draw(){
 			ball4.remove()
 			ball5.remove()
 			ball.remove()
+			allSprites.remove()
 			setup()
-			homescreen = false
-			game = true
 			draw()
 		}
 	}
