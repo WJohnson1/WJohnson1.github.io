@@ -112,6 +112,14 @@ function draw(){
 		textSize(25)
 		text("Press Enter to Start a New Game",360,350)
 		if (keyCode === ENTER) {
+            player.remove()
+            opponent.remove()
+            opponent1.remove()
+            opponent2.remove()
+            opponent3.remove()
+            opponent4.remove()
+            opponent5.remove()
+            opponent6.remove()
             setup()
             homescreen = false
             homescreen = false
