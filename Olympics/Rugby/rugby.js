@@ -188,13 +188,6 @@ function draw(){
 			e2.remove()
 			e3.remove()
 			e4.remove()
-			player.remove()
-			ball2.remove()
-			ball3.remove()
-			ball4.remove()
-			ball5.remove()
-			ball.remove()
-			allSprites.remove()
 			setup()
 			draw()
 		}
