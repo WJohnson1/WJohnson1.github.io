@@ -48,7 +48,7 @@ function draw(){
 		background(123,183,166)
 		textSize(50)
 		fill(255,255,255)
-		text("Can You Get A Perfect Score", 300,100)
+		text("Can You Get A Perfect Score", 350,100)
 		text("Press Enter to Dive",475,250)
 		textSize(25)
 		text("(Aim for the target)",525,275)
