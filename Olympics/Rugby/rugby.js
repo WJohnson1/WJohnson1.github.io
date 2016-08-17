@@ -195,6 +195,7 @@ function draw(){
 			ball5.remove()
 			ball.remove()
 			setup()
+			homescreen = false
 			game = true
 			draw()
 		}
