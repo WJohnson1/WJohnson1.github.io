@@ -187,8 +187,7 @@ function draw(){
 			// e2.remove()
 			// e3.remove()
 			// e4.remove()
-			setup()
-			draw()
+			location.reload();
 		}
 	}
 }
