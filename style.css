@@ -31,6 +31,12 @@ h1 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 100px;
 }
+#Title {
+    color: #FFFFFF;
+    background-color:transparent;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 100px;
+}
 p {
 	color: #FFFFFF;
 	background-color: rgba(245, 176, 65,0.65);
