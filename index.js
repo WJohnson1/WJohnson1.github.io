@@ -21,3 +21,4 @@ var username = $('name');
 		function updateName(){
 			var name = prompt('Enter Your Name');
 			para.text("Your name is " + name)
+    }  
