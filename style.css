@@ -4,6 +4,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color:transparent;
 }
 ul {
     list-style-type: none;
@@ -74,4 +75,7 @@ text-align:center;
 
 .dropdown:hover .dropdown-content {
     display: block; 
+}
+#head {
+    background-color:transparent;
 }
