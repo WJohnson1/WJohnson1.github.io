@@ -85,8 +85,6 @@ function jump(){
 		player.velocity.y = player.velocity.y + 3;
 		player.velocity.x = 10
 		player.addImage(loadImage("https://wjohnson1.github.io/Olympics/Diving/swimmer.png"))
-		console.log(player.velocity.y)
-		console.log(player.velocity.x)
 	}
 	if (player.velocity.y === 2) {
 		if (keyCode === ENTER){
@@ -103,52 +101,40 @@ function end(){
 		player.velocity.y = 0
 		game = false
 		x_score = target.position.x - player.position.x 
-		console.log(x_score)
 		y_score = target.position.y - player.position.y
-		console.log(y_score)
 		if (y_score === 52){
 			second_score = 10
-			console.log(second_score)
 		}
 		if (x_score < 5 && x_score > -5){
 			first_score = 10
-			console.log(first_score)
 			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
 			text(first_score,425,123)
 			text(second_score,625,123)
 			text(avg_score,825,123)
 		}
 		if ((x_score < 10 && x_score > 5) | (x_score > -10 && x_score < -5)){
 			first_score = 9
-			console.log(first_score)
 			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
 			text(first_score,425,123)
 			text(second_score,625,123)
 			text(avg_score,825,123)			
 		}
 		if ((x_score < 20 && x_score > 10) | (x_score > -20 && x_score < -10)){
 			first_score = 8
-			console.log(first_score)
 			text(second_score,625,123)
 			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
 			text(first_score,425,123)
 			text(avg_score,825,123)
 		}
 		if ((x_score < 30 && x_score > 20) | (x_score > -30 && x_score < -20)){
 			first_score = 7
-			console.log(first_score)
 			avg_score = (first_score + second_score)/2
-			console.log(avg_score)
 			text(first_score,425,123)
 			text(second_score,625,123)
 			text(avg_score,825,123)
 		}				
 		if ((x_score < 40 && x_score > 30) | (x_score > -40 && x_score < -30)){
 			first_score = 6
-			console.log(first_score)		
 			avg_score = (first_score + second_score)/2
 			console.log(avg_score)
 			text(first_score,425,123)
